@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last-Mile Logistics | [Your Name]</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --p-bar: #BFCBD8; }
+        .p-bar { height: 4px; background: var(--p-bar); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-name">[Your Name]</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#research" class="active">Research</a></li>
+            <li><a href="../index.html#teaching">Teaching</a></li>
+            <li><a href="../index.html#news">News</a></li>
+            <li><a href="mailto:your.email@university.edu">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="p-bar"></div>
+
+<div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="../index.html#research">Research</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">Last-Mile Logistics</span>
+</div>
+
+<header class="project-hero">
+    <div class="project-hero-inner">
+        <div class="project-hero-meta">
+            <span class="project-status status-completed">Completed</span>
+            <span class="project-hero-years">2018 — 2023</span>
+        </div>
+        <h1 class="project-hero-title">Last-Mile Logistics and Urban Delivery Optimization</h1>
+        <p class="project-hero-tagline">
+            Exact and heuristic algorithms for vehicle routing problems with time windows and heterogeneous fleets, with applications ranging from urban parcel delivery to humanitarian relief distribution.
+        </p>
+        <div class="tag-list">
+            <span class="tag">Vehicle Routing</span>
+            <span class="tag">Urban Logistics</span>
+            <span class="tag">Combinatorial Optimization</span>
+            <span class="tag">Branch-and-Price</span>
+            <span class="tag">Humanitarian Logistics</span>
+        </div>
+    </div>
+</header>
+
+<div class="project-content">
+
+    <main class="project-main">
+
+        <div class="project-overview" id="overview">
+            <h2>Overview</h2>
+            <p>
+                Last-mile delivery — the final leg of the supply chain from a distribution center to the end customer — accounts for a disproportionately large share of total logistics costs (often 40–60%) and is a major source of urban traffic congestion and carbon emissions. This project developed a comprehensive suite of optimization methods for last-mile routing problems, from exact algorithms capable of proving optimality on medium-scale instances to scalable heuristics for large real-world applications.
+            </p>
+            <p>
+                The methodological focus was on the Vehicle Routing Problem with Time Windows (VRPTW) and its heterogeneous-fleet variant (HFVRPTW), extended to capture several practically important features: stochastic travel times, customer availability windows, multi-compartment vehicles, and coordination with public transit in urban settings.
+            </p>
+            <p>
+                A secondary thread of the project applied these methods to humanitarian logistics — optimizing the distribution of relief supplies following natural disasters, where time is critical and infrastructure is damaged.
+            </p>
+
+            <h2>Research Questions</h2>
+            <ul>
+                <li>Can branch-and-price algorithms solve real-scale VRPTW instances with heterogeneous fleets within practical runtimes?</li>
+                <li>How does travel time stochasticity affect optimal routing decisions and service guarantees?</li>
+                <li>Can last-mile delivery be better coordinated with public transit (cargo bikes, trams) to reduce urban emissions?</li>
+                <li>How should routing algorithms be adapted for the humanitarian context, where objectives shift from cost to equity and speed?</li>
+            </ul>
+
+            <h2>Key Findings</h2>
+            <p>
+                The branch-and-price algorithm developed in this project solved benchmark VRPTW instances with up to 100 customers to optimality within 30 minutes, outperforming state-of-the-art heuristics on 80% of test cases. The algorithm's key innovation — a tailored label-setting algorithm for the pricing subproblem incorporating decremental state-space relaxation — has since been adopted in the OR community.
+            </p>
+            <p>
+                For stochastic travel times, we showed that robust routing solutions sacrifice less than 3% in expected cost while reducing service failures by over 40% compared to deterministic solutions on real city networks. The humanitarian logistics extension demonstrated that equity-aware routing (minimizing the maximum wait time across beneficiary groups) requires only a 12–18% cost premium over pure efficiency-optimized solutions.
+            </p>
+
+            <h2>Impact &amp; Continuation</h2>
+            <p>
+                This project concluded in 2023. Several threads from it are being continued: the robust routing work feeds into the Supply Chain Resilience project, and the humanitarian logistics methods are being extended in a separate collaboration with [NGO / Partner]. Benchmark instances and the branch-and-price solver remain publicly available.
+            </p>
+        </div>
+
+        <div style="margin-top: 3rem;">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="publications">Publications</button>
+                <button class="tab-btn" data-tab="datasets">Datasets &amp; Code</button>
+                <button class="tab-btn" data-tab="presentations">Presentations</button>
+            </div>
+
+            <div class="tab-panel active" id="tab-publications">
+                <div class="pub-list">
+                    <div class="pub-card">
+                        <p class="pub-title">Last-Mile Delivery Route Optimization under Time-Window Constraints: A Branch-and-Price Approach</p>
+                        <p class="pub-authors">[Your Name], Co-Author D, Co-Author E</p>
+                        <p class="pub-venue">Transportation Science, Vol. XX, No. X, pp. XXX–XXX, 2022</p>
+                        <p class="pub-abstract">We present a branch-and-price algorithm for the HFVRPTW incorporating a novel label-setting algorithm with decremental state-space relaxation. The approach solves standard benchmark instances to optimality and is validated on real delivery data from an urban logistics operator.</p>
+                        <div class="pub-tags">
+                            <span class="tag">Branch-and-Price</span>
+                            <span class="tag">VRPTW</span>
+                            <span class="tag">Exact Algorithm</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📄 PDF</a>
+                            <a href="#" class="pub-link">🔗 DOI</a>
+                            <a href="#" class="pub-link">💻 Code</a>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">Robust Vehicle Routing under Stochastic Travel Times: Exact Formulations and Heuristic Approximations</p>
+                        <p class="pub-authors">[Your Name], Co-Author J</p>
+                        <p class="pub-venue">European Journal of Operational Research, Vol. XX, No. X, pp. XXX–XXX, 2021</p>
+                        <p class="pub-abstract">We model stochastic travel times via discrete scenarios and develop both exact and heuristic methods for the resulting robust VRPTW. Extensive experiments show that modest robustness premiums yield significant improvements in on-time delivery performance.</p>
+                        <div class="pub-tags">
+                            <span class="tag">Robust Optimization</span>
+                            <span class="tag">Stochastic Travel Times</span>
+                            <span class="tag">VRPTW</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📄 PDF</a>
+                            <a href="#" class="pub-link">🔗 DOI</a>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">Equity-Aware Routing for Humanitarian Relief Distribution</p>
+                        <p class="pub-authors">[Your Name], Co-Author K, Co-Author L</p>
+                        <p class="pub-venue">Transportation Research Part B, Vol. XX, pp. XXX–XXX, 2020</p>
+                        <p class="pub-abstract">We introduce equity constraints into the vehicle routing problem for humanitarian logistics, formulate a bi-objective model trading off efficiency and equity, and develop a Pareto-front algorithm. Applied to a post-earthquake relief case study.</p>
+                        <div class="pub-tags">
+                            <span class="tag">Humanitarian Logistics</span>
+                            <span class="tag">Equity</span>
+                            <span class="tag">Multi-objective</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📄 PDF</a>
+                            <a href="#" class="pub-link">🔗 DOI</a>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">Crowd-Sourced Last-Mile Delivery: Matching, Routing, and Platform Design</p>
+                        <p class="pub-authors">[Your Name], Co-Author D, Co-Author M</p>
+                        <p class="pub-venue">Operations Research, Vol. XX, No. X, pp. XXX–XXX, 2019</p>
+                        <p class="pub-abstract">We study the joint problem of matching crowd-sourced drivers to delivery tasks and routing them efficiently in a platform setting. We derive structural properties of optimal matching policies and design platform mechanisms that align incentives.</p>
+                        <div class="pub-tags">
+                            <span class="tag">Crowd-Sourcing</span>
+                            <span class="tag">Platform Design</span>
+                            <span class="tag">Matching</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📄 PDF</a>
+                            <a href="#" class="pub-link">🔗 DOI</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="tab-datasets">
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">💻</div>
+                        <p class="resource-title">Branch-and-Price VRPTW Solver</p>
+                        <p class="resource-desc">C++/Python implementation of the branch-and-price algorithm from the Transportation Science 2022 paper. Handles heterogeneous fleets, time windows, and optional robust travel time extensions.</p>
+                        <p class="resource-meta">Language: C++ / Python interface &nbsp;·&nbsp; License: MIT</p>
+                        <div style="display:flex;gap:0.5rem;">
+                            <a href="https://github.com/yourusername/vrptw-bnp" class="pub-link" target="_blank" rel="noopener">🔗 GitHub</a>
+                            <a href="#" class="pub-link">📖 Docs</a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🗺</div>
+                        <p class="resource-title">Last-Mile Network Benchmark Set</p>
+                        <p class="resource-desc">150 VRPTW benchmark instances derived from real city networks (4 cities, 3 instance sizes). Includes time-window data, travel time matrices (deterministic and stochastic), and vehicle fleet specifications.</p>
+                        <p class="resource-meta">Format: JSON / TSPLIB &nbsp;·&nbsp; 150 instances &nbsp;·&nbsp; License: CC BY 4.0</p>
+                        <div><a href="#" class="pub-link">⬇ Download</a></div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🌍</div>
+                        <p class="resource-title">Humanitarian Routing Instances</p>
+                        <p class="resource-desc">Routing instances for post-disaster relief distribution, derived from publicly available data for three historical disaster events. Includes beneficiary locations, demand estimates, and road network data.</p>
+                        <p class="resource-meta">Format: CSV / GeoJSON &nbsp;·&nbsp; License: CC BY 4.0</p>
+                        <div><a href="#" class="pub-link">⬇ Download</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="tab-presentations">
+                <div class="pub-list">
+                    <div class="pub-card">
+                        <p class="pub-title">From Stochastic Models to Real-World Decisions: Bridging the Gap in Supply Chain Optimization</p>
+                        <p class="pub-authors">Plenary Lecture &nbsp;·&nbsp; [Conference Name] &nbsp;·&nbsp; [City], 2023</p>
+                        <p class="pub-abstract">Closing talk of the project, synthesizing methodological contributions across routing, robustness, and humanitarian applications, and outlining open problems for the community.</p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📑 Slides</a>
+                            <a href="#" class="pub-link">▶ Video</a>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">Exact Algorithms for the Heterogeneous Fleet VRPTW</p>
+                        <p class="pub-authors">Contributed Talk &nbsp;·&nbsp; EURO Annual Conference &nbsp;·&nbsp; 2022</p>
+                        <p class="pub-abstract">Presentation of the Transportation Science 2022 paper, including live demo of the solver on benchmark instances.</p>
+                        <div class="pub-links"><a href="#" class="pub-link">📑 Slides</a></div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">Equitable Routing for Humanitarian Relief</p>
+                        <p class="pub-authors">Invited Talk &nbsp;·&nbsp; [NGO / Practitioner Forum] &nbsp;·&nbsp; 2021</p>
+                        <p class="pub-abstract">Practice-oriented presentation of the equity-aware routing framework, aimed at humanitarian practitioners and aid organizations exploring optimization tools.</p>
+                        <div class="pub-links"><a href="#" class="pub-link">📑 Slides</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="project-sidebar">
+        <div class="project-info-card">
+            <div class="project-info-card-header"><h3>Project details</h3></div>
+            <ul class="project-info-list">
+                <li class="project-info-item">
+                    <span class="project-info-label">Status</span>
+                    <span class="project-info-value"><span class="project-status status-completed" style="font-size:0.78rem;">Completed</span></span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Duration</span>
+                    <span class="project-info-value">2018 — 2023</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Funding</span>
+                    <span class="project-info-value">[Funding Body] · Grant No. XXXXXX</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Principal Investigator</span>
+                    <span class="project-info-value">[Your Name], [Your University]</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Collaborators</span>
+                    <span class="project-info-value">Co-Author D ([Institution])<br>Co-Author E ([Institution])<br>Co-Author J ([Institution])<br>Co-Author K ([Institution])</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Related courses</span>
+                    <span class="project-info-value">MGMT 4XX — Introduction to OR<br>MGMT 5XX — Supply Chain Management</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Output</span>
+                    <span class="project-info-value">4 papers &nbsp;·&nbsp; 2 datasets &nbsp;·&nbsp; 1 solver</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Repository</span>
+                    <span class="project-info-value"><a href="https://github.com/yourusername/vrptw-bnp" target="_blank" rel="noopener">github.com/yourusername/vrptw-bnp</a></span>
+                </li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+            <p style="font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-light); margin-bottom:0.75rem;">Other projects</p>
+            <div style="display:flex; flex-direction:column; gap:0.5rem;">
+                <a href="supply-chain-resilience.html" style="display:block; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius); padding:0.75rem 1rem; font-size:0.88rem; color:var(--text-muted); text-decoration:none; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent-soft)'" onmouseout="this.style.borderColor='var(--border-soft)'">
+                    Supply Chain Resilience →
+                </a>
+                <a href="inventory-optimization.html" style="display:block; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius); padding:0.75rem 1rem; font-size:0.88rem; color:var(--text-muted); text-decoration:none; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent-soft)'" onmouseout="this.style.borderColor='var(--border-soft)'">
+                    Inventory Optimization in Omnichannel Retail →
+                </a>
+            </div>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <p class="footer-name">[Your Name]</p>
+            <p class="footer-tagline">Operations Research &amp; Supply Chain Management</p>
+            <div class="footer-contact">
+                <a href="mailto:your.email@university.edu">✉ your.email@university.edu</a>
+                <a href="https://scholar.google.com/citations?user=YOURID" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a>
+            </div>
+        </div>
+        <div>
+            <p class="footer-heading">Navigate</p>
+            <ul class="footer-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#research">All Projects</a></li>
+                <li><a href="../index.html#teaching">Teaching</a></li>
+                <li><a href="../index.html#news">News</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer-heading">Links</p>
+            <ul class="footer-links">
+                <li><a href="#">[Your University]</a></li>
+                <li><a href="#">[Your Department]</a></li>
+                <li><a href="../cv.pdf">Download CV</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <p>Hosted on GitHub Pages</p>
+    </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>

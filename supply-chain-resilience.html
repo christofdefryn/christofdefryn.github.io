@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Resilience | [Your Name]</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Project accent color for this page */
+        :root { --p-accent: #4E7A6E; --p-bar: #C5D8D3; --p-faint: #EAF1EF; }
+        .p-bar { height: 4px; background: var(--p-bar); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-name">[Your Name]</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#research" class="active">Research</a></li>
+            <li><a href="../index.html#teaching">Teaching</a></li>
+            <li><a href="../index.html#news">News</a></li>
+            <li><a href="mailto:your.email@university.edu">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="p-bar"></div>
+
+<div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="../index.html#research">Research</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">Supply Chain Resilience</span>
+</div>
+
+<header class="project-hero">
+    <div class="project-hero-inner">
+        <div class="project-hero-meta">
+            <span class="project-status status-ongoing">Ongoing</span>
+            <span class="project-hero-years">2022 — present</span>
+        </div>
+        <h1 class="project-hero-title">Supply Chain Resilience under Climate and Disruption Risk</h1>
+        <p class="project-hero-tagline">
+            Designing supply networks that stay cost-effective under demand uncertainty, supplier disruptions, and climate-driven shocks — using two-stage stochastic programming and robust optimization.
+        </p>
+        <div class="tag-list">
+            <span class="tag">Stochastic Programming</span>
+            <span class="tag">Network Design</span>
+            <span class="tag">Resilience</span>
+            <span class="tag">Climate Risk</span>
+            <span class="tag">Supply Chain</span>
+        </div>
+    </div>
+</header>
+
+<div class="project-content">
+
+    <!-- MAIN CONTENT -->
+    <main class="project-main">
+
+        <!-- Overview -->
+        <div class="project-overview" id="overview">
+            <h2>Overview</h2>
+            <p>
+                Modern supply chains face an increasingly volatile landscape: demand shocks, geopolitical disruptions, supplier failures, and more recently, the systemic effects of climate change on infrastructure, agriculture, and transportation. This project develops mathematical optimization models that allow firms and policymakers to design supply networks that are both efficient under normal conditions and resilient when disruptions occur.
+            </p>
+            <p>
+                The core methodological contribution is a family of two-stage stochastic programming models in which first-stage decisions (facility locations, capacity investments, long-term contracts) are made before uncertainty is resolved, and second-stage decisions (flow allocation, emergency sourcing) adapt to realized scenarios. We develop exact decomposition algorithms (Benders, L-shaped) and heuristics for large-scale instances.
+            </p>
+
+            <h2>Research Questions</h2>
+            <ul>
+                <li>How should a firm balance cost efficiency and resilience when designing a multi-echelon supply network?</li>
+                <li>What is the economic value of resilience investments under different disruption probability profiles?</li>
+                <li>How do climate change trajectories affect optimal network topology over long planning horizons?</li>
+                <li>Can we develop tractable models that scale to realistic industry instances?</li>
+            </ul>
+
+            <h2>Key Findings</h2>
+            <p>
+                Our results show that moderate investments in redundancy — dual sourcing and regional safety stocks — yield disproportionate resilience improvements at relatively low cost under a broad range of disruption scenarios. Climate-adjusted models suggest that network designs optimized under historical disruption data become significantly suboptimal when projected climate trajectories are incorporated.
+            </p>
+            <p>
+                The decomposition algorithms developed in this project solve instances with up to 500 nodes and 1,000 scenarios within practical runtimes, enabling their use in commercial decision-support settings.
+            </p>
+
+            <h2>Funding &amp; Acknowledgements</h2>
+            <p>
+                This project is supported by [Funding Body, Grant No. XXXXXX]. The author thanks [Collaborating Institution] for access to industry data and [Name] for research assistance.
+            </p>
+        </div>
+
+        <!-- Resource tabs -->
+        <div style="margin-top: 3rem;">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="publications">Publications</button>
+                <button class="tab-btn" data-tab="datasets">Datasets &amp; Code</button>
+                <button class="tab-btn" data-tab="presentations">Presentations</button>
+            </div>
+
+            <!-- Publications -->
+            <div class="tab-panel active" id="tab-publications">
+                <div class="pub-list">
+                    <div class="pub-card">
+                        <p class="pub-title">A Stochastic Optimization Model for Multi-Echelon Supply Chain Network Design under Disruption Risk</p>
+                        <p class="pub-authors">[Your Name], Co-Author A, Co-Author B</p>
+                        <p class="pub-venue">European Journal of Operational Research, Vol. XX, No. X, pp. XXX–XXX, 2024</p>
+                        <p class="pub-abstract">We propose a two-stage stochastic programming model for resilient supply chain network design under demand uncertainty and supplier disruption scenarios, solved via a customized Benders decomposition. Experiments on realistic instances demonstrate significant cost savings over deterministic approaches.</p>
+                        <div class="pub-tags">
+                            <span class="tag">Stochastic Programming</span>
+                            <span class="tag">Network Design</span>
+                            <span class="tag">Benders Decomposition</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📄 PDF</a>
+                            <a href="#" class="pub-link">🔗 DOI</a>
+                            <a href="#" class="pub-link">📊 Data</a>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">Climate-Adjusted Supply Chain Network Design: A Long-Horizon Stochastic Programming Approach</p>
+                        <p class="pub-authors">[Your Name], Co-Author F</p>
+                        <p class="pub-venue">Working Paper, under review at Management Science, 2025</p>
+                        <p class="pub-abstract">We extend the two-stage framework to incorporate climate change scenarios over long planning horizons, coupling supply chain optimization with climate projection models. Results show substantial differences between climate-aware and climate-naive network designs.</p>
+                        <div class="pub-tags">
+                            <span class="tag">Climate Risk</span>
+                            <span class="tag">Long-Horizon Planning</span>
+                            <span class="tag">Stochastic Programming</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📄 Preprint</a>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">The Value of Resilience Investments in Supply Networks: A Sensitivity Analysis</p>
+                        <p class="pub-authors">[Your Name], Co-Author A, Co-Author G</p>
+                        <p class="pub-venue">Operations Research Letters, Vol. XX, No. X, pp. XXX–XXX, 2023</p>
+                        <p class="pub-abstract">A systematic analysis of how the value of network resilience investments varies with disruption probability, magnitude, and recovery time. We derive closed-form bounds and validate them against simulation studies.</p>
+                        <div class="pub-tags">
+                            <span class="tag">Resilience</span>
+                            <span class="tag">Sensitivity Analysis</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📄 PDF</a>
+                            <a href="#" class="pub-link">🔗 DOI</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Datasets & Code -->
+            <div class="tab-panel" id="tab-datasets">
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📊</div>
+                        <p class="resource-title">Supply Chain Disruption Dataset</p>
+                        <p class="resource-desc">Curated dataset of real-world supply chain disruption events (2010–2023), including severity, recovery times, industry sectors, and geographic scope. Companion to the EJOR 2024 paper.</p>
+                        <p class="resource-meta">Format: CSV &nbsp;·&nbsp; ~12 MB &nbsp;·&nbsp; License: CC BY 4.0</p>
+                        <div><a href="#" class="pub-link">⬇ Download</a></div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">💻</div>
+                        <p class="resource-title">Benders Decomposition Solver</p>
+                        <p class="resource-desc">Python implementation of the Benders decomposition algorithm for the two-stage stochastic network design model. Includes test instances and a Jupyter notebook with worked examples.</p>
+                        <p class="resource-meta">Language: Python &nbsp;·&nbsp; Requires: Gurobi / CPLEX</p>
+                        <div style="display:flex;gap:0.5rem;">
+                            <a href="https://github.com/yourusername/sc-resilience" class="pub-link" target="_blank" rel="noopener">🔗 GitHub</a>
+                            <a href="#" class="pub-link">📖 Docs</a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">🌡</div>
+                        <p class="resource-title">Climate Scenario Generator</p>
+                        <p class="resource-desc">Scripts for generating regional supply chain disruption scenarios consistent with IPCC climate projections (SSP2-4.5, SSP5-8.5). Used in the Management Science working paper.</p>
+                        <p class="resource-meta">Language: Python / R &nbsp;·&nbsp; Data: CMIP6</p>
+                        <div><a href="https://github.com/yourusername/climate-sc" class="pub-link" target="_blank" rel="noopener">🔗 GitHub</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presentations -->
+            <div class="tab-panel" id="tab-presentations">
+                <div class="pub-list">
+                    <div class="pub-card">
+                        <p class="pub-title">Resilient Supply Chain Design under Climate-Driven Disruptions</p>
+                        <p class="pub-authors">Invited Talk &nbsp;·&nbsp; [Conference Name] &nbsp;·&nbsp; [City], 2025</p>
+                        <p class="pub-abstract">Overview of our framework for incorporating climate risk scenarios into supply chain network optimization, with case studies from food and pharmaceutical sectors.</p>
+                        <div class="pub-links"><a href="#" class="pub-link">📑 Slides</a></div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">Stochastic Programming for Supply Chain Resilience: Models, Algorithms, and Insights</p>
+                        <p class="pub-authors">Seminar Talk &nbsp;·&nbsp; [Host University] &nbsp;·&nbsp; 2024</p>
+                        <p class="pub-abstract">A comprehensive presentation of the project's methodological contributions and key managerial insights, aimed at a general OR audience.</p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📑 Slides</a>
+                            <a href="#" class="pub-link">▶ Video</a>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">The Value of Resilience: How Much Should Firms Invest in Supply Chain Robustness?</p>
+                        <p class="pub-authors">Contributed Talk &nbsp;·&nbsp; INFORMS Annual Meeting &nbsp;·&nbsp; 2023</p>
+                        <p class="pub-abstract">Presentation of the OR Letters 2023 paper on sensitivity analysis for resilience investments, including new numerical results.</p>
+                        <div class="pub-links"><a href="#" class="pub-link">📑 Slides</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="project-sidebar">
+        <div class="project-info-card">
+            <div class="project-info-card-header">
+                <h3>Project details</h3>
+            </div>
+            <ul class="project-info-list">
+                <li class="project-info-item">
+                    <span class="project-info-label">Status</span>
+                    <span class="project-info-value"><span class="project-status status-ongoing" style="font-size:0.78rem;">Ongoing</span></span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Duration</span>
+                    <span class="project-info-value">2022 — present</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Funding</span>
+                    <span class="project-info-value">[Funding Body] · Grant No. XXXXXX</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Principal Investigator</span>
+                    <span class="project-info-value">[Your Name], [Your University]</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Collaborators</span>
+                    <span class="project-info-value">Co-Author A ([Institution])<br>Co-Author B ([Institution])<br>Co-Author F ([Institution])</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Related courses</span>
+                    <span class="project-info-value">MGMT 5XX — Supply Chain Management<br>MGMT 6XX — Advanced Stochastic Optimization</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Output</span>
+                    <span class="project-info-value">3 papers &nbsp;·&nbsp; 2 datasets &nbsp;·&nbsp; 1 solver</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Repository</span>
+                    <span class="project-info-value"><a href="https://github.com/yourusername/sc-resilience" target="_blank" rel="noopener">github.com/yourusername/sc-resilience</a></span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Navigation to other projects -->
+        <div style="margin-top: 1.5rem;">
+            <p style="font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-light); margin-bottom:0.75rem;">Other projects</p>
+            <div style="display:flex; flex-direction:column; gap:0.5rem;">
+                <a href="inventory-optimization.html" style="display:block; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius); padding:0.75rem 1rem; font-size:0.88rem; color:var(--text-muted); text-decoration:none; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent-soft)'" onmouseout="this.style.borderColor='var(--border-soft)'">
+                    Inventory Optimization in Omnichannel Retail →
+                </a>
+                <a href="last-mile-logistics.html" style="display:block; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius); padding:0.75rem 1rem; font-size:0.88rem; color:var(--text-muted); text-decoration:none; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent-soft)'" onmouseout="this.style.borderColor='var(--border-soft)'">
+                    Last-Mile Logistics and Urban Delivery →
+                </a>
+            </div>
+        </div>
+    </aside>
+
+</div><!-- end .project-content -->
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <p class="footer-name">[Your Name]</p>
+            <p class="footer-tagline">Operations Research &amp; Supply Chain Management</p>
+            <div class="footer-contact">
+                <a href="mailto:your.email@university.edu">✉ your.email@university.edu</a>
+                <a href="https://scholar.google.com/citations?user=YOURID" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a>
+            </div>
+        </div>
+        <div>
+            <p class="footer-heading">Navigate</p>
+            <ul class="footer-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#research">All Projects</a></li>
+                <li><a href="../index.html#teaching">Teaching</a></li>
+                <li><a href="../index.html#news">News</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer-heading">Links</p>
+            <ul class="footer-links">
+                <li><a href="#">[Your University]</a></li>
+                <li><a href="#">[Your Department]</a></li>
+                <li><a href="../cv.pdf">Download CV</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <p>Hosted on GitHub Pages</p>
+    </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>

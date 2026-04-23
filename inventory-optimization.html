@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Optimization | [Your Name]</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --p-bar: #D9CEBC; }
+        .p-bar { height: 4px; background: var(--p-bar); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-name">[Your Name]</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#research" class="active">Research</a></li>
+            <li><a href="../index.html#teaching">Teaching</a></li>
+            <li><a href="../index.html#news">News</a></li>
+            <li><a href="mailto:your.email@university.edu">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="p-bar"></div>
+
+<div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="../index.html#research">Research</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">Inventory Optimization</span>
+</div>
+
+<header class="project-hero">
+    <div class="project-hero-inner">
+        <div class="project-hero-meta">
+            <span class="project-status status-ongoing">Ongoing</span>
+            <span class="project-hero-years">2020 — present</span>
+        </div>
+        <h1 class="project-hero-title">Inventory Optimization in Omnichannel Retail</h1>
+        <p class="project-hero-tagline">
+            Adaptive inventory policies for retailers that must coordinate stock across physical stores and online channels while dynamically learning demand patterns — combining inventory theory with Bayesian statistics.
+        </p>
+        <div class="tag-list">
+            <span class="tag">Inventory Theory</span>
+            <span class="tag">Demand Learning</span>
+            <span class="tag">Omnichannel</span>
+            <span class="tag">Bayesian Methods</span>
+            <span class="tag">Retail Operations</span>
+        </div>
+    </div>
+</header>
+
+<div class="project-content">
+
+    <main class="project-main">
+
+        <div class="project-overview" id="overview">
+            <h2>Overview</h2>
+            <p>
+                The rise of omnichannel retail has fundamentally changed the inventory management problem. Customers expect seamless access to products regardless of channel — they may browse online, purchase in-store, return via mail, or pick up curbside. This means retailers must simultaneously manage inventory pools across multiple locations while demand patterns are highly heterogeneous, non-stationary, and only partially observable through each channel.
+            </p>
+            <p>
+                This project develops the theoretical foundations and practical algorithms for inventory optimization in omnichannel environments. We study how retailers should set stocking levels and replenishment triggers when they must balance channel-specific demand uncertainty, inventory pooling opportunities, and fulfillment costs, all while learning about an evolving customer demand distribution.
+            </p>
+
+            <h2>Research Questions</h2>
+            <ul>
+                <li>What is the optimal structure of inventory replenishment policies when demand is uncertain and learning occurs dynamically?</li>
+                <li>How much value does inventory pooling across channels create, and under what conditions?</li>
+                <li>How should a retailer balance the exploration–exploitation tradeoff in demand learning?</li>
+                <li>Can we develop computationally tractable policies with provable performance guarantees?</li>
+            </ul>
+
+            <h2>Key Findings</h2>
+            <p>
+                Our main theoretical result shows that the optimal policy under Bayesian demand updating retains a base-stock structure, generalizing classical newsvendor-type results to the dynamic learning setting. The optimal base-stock level is shown to decrease over time as uncertainty resolves, with the rate of decrease depending on the prior variance and the channel correlation structure.
+            </p>
+            <p>
+                On the pooling side, we quantify the value of flexible fulfillment (i.e., fulfilling online orders from physical stores and vice versa) and characterize the conditions — primarily related to the coefficient of variation of channel demands — under which pooling is most beneficial. Numerical experiments with real retail data confirm the theoretical predictions.
+            </p>
+
+            <h2>Funding &amp; Acknowledgements</h2>
+            <p>
+                This project is supported by [Funding Body, Grant No. XXXXXX] and a research partnership with [Retail Company / Lab]. The author thanks [Research Assistant] for data analysis support.
+            </p>
+        </div>
+
+        <div style="margin-top: 3rem;">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="publications">Publications</button>
+                <button class="tab-btn" data-tab="datasets">Datasets &amp; Code</button>
+                <button class="tab-btn" data-tab="presentations">Presentations</button>
+            </div>
+
+            <div class="tab-panel active" id="tab-publications">
+                <div class="pub-list">
+                    <div class="pub-card">
+                        <p class="pub-title">Dynamic Inventory Policies with Demand Learning in Omnichannel Retail</p>
+                        <p class="pub-authors">[Your Name], Co-Author C</p>
+                        <p class="pub-venue">Manufacturing &amp; Service Operations Management, Vol. XX, No. X, pp. XXX–XXX, 2023</p>
+                        <p class="pub-abstract">We derive the structure of the optimal inventory policy when a retailer learns the demand distribution Bayesianly over a finite horizon. We show base-stock optimality, derive explicit formulas for the optimal base-stock levels, and quantify the value of demand information.</p>
+                        <div class="pub-tags">
+                            <span class="tag">Inventory Theory</span>
+                            <span class="tag">Demand Learning</span>
+                            <span class="tag">Bayesian Statistics</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📄 PDF</a>
+                            <a href="#" class="pub-link">🔗 DOI</a>
+                            <a href="#" class="pub-link">📊 Data</a>
+                        </div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">Inventory Pooling and Flexible Fulfillment in Omnichannel Retail: Structural Results and Performance Bounds</p>
+                        <p class="pub-authors">[Your Name], Co-Author H, Co-Author I</p>
+                        <p class="pub-venue">Working Paper, under review at Operations Research, 2025</p>
+                        <p class="pub-abstract">We characterize when flexible fulfillment across channels is most valuable, derive structural results on the optimal channel allocation policy, and provide performance guarantees for computationally tractable heuristics. Validated with data from a large European retailer.</p>
+                        <div class="pub-tags">
+                            <span class="tag">Pooling</span>
+                            <span class="tag">Flexible Fulfillment</span>
+                            <span class="tag">Omnichannel</span>
+                        </div>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">📄 Preprint</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="tab-datasets">
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📦</div>
+                        <p class="resource-title">Inventory Simulation Toolkit</p>
+                        <p class="resource-desc">Open-source Python library for simulating multi-channel inventory systems under stochastic demand. Supports periodic review, base-stock, and (s, S) policies with Bayesian demand updating modules.</p>
+                        <p class="resource-meta">Language: Python &nbsp;·&nbsp; Available on PyPI</p>
+                        <div style="display:flex;gap:0.5rem;">
+                            <a href="https://github.com/yourusername/inv-sim" class="pub-link" target="_blank" rel="noopener">🔗 GitHub</a>
+                            <a href="#" class="pub-link">📖 Docs</a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">📊</div>
+                        <p class="resource-title">Omnichannel Demand Dataset</p>
+                        <p class="resource-desc">Anonymized weekly demand data from [Retail Partner] for [X] SKUs across physical and online channels, with promotional calendars and fulfillment logs. Used in the OR 2025 working paper.</p>
+                        <p class="resource-meta">Format: CSV &nbsp;·&nbsp; Available upon request (DUA required)</p>
+                        <div><a href="mailto:your.email@university.edu" class="pub-link">✉ Request access</a></div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">📓</div>
+                        <p class="resource-title">Replication Notebooks</p>
+                        <p class="resource-desc">Jupyter notebooks reproducing all numerical experiments and figures in the M&amp;SOM 2023 paper. Includes synthetic data generation scripts for the case where the original dataset cannot be shared.</p>
+                        <p class="resource-meta">Language: Python</p>
+                        <div><a href="https://github.com/yourusername/msom-2023-replication" class="pub-link" target="_blank" rel="noopener">🔗 GitHub</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="tab-presentations">
+                <div class="pub-list">
+                    <div class="pub-card">
+                        <p class="pub-title">Dynamic Pricing and Inventory Coordination in Omnichannel Systems</p>
+                        <p class="pub-authors">Research Seminar &nbsp;·&nbsp; [Host Institution] &nbsp;·&nbsp; 2024</p>
+                        <p class="pub-abstract">Joint presentation with industry partner on the challenge of coordinating pricing and replenishment decisions across retail channels under uncertainty, highlighting practical implementation lessons.</p>
+                        <div class="pub-links"><a href="#" class="pub-link">📑 Slides</a></div>
+                    </div>
+                    <div class="pub-card">
+                        <p class="pub-title">Learning to Stock: Optimal Inventory Policies under Demand Uncertainty</p>
+                        <p class="pub-authors">Contributed Talk &nbsp;·&nbsp; POMS Annual Conference &nbsp;·&nbsp; 2023</p>
+                        <p class="pub-abstract">Presentation of the M&amp;SOM 2023 main results, with extensions discussing multi-product and multi-echelon generalizations.</p>
+                        <div class="pub-links"><a href="#" class="pub-link">📑 Slides</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="project-sidebar">
+        <div class="project-info-card">
+            <div class="project-info-card-header"><h3>Project details</h3></div>
+            <ul class="project-info-list">
+                <li class="project-info-item">
+                    <span class="project-info-label">Status</span>
+                    <span class="project-info-value"><span class="project-status status-ongoing" style="font-size:0.78rem;">Ongoing</span></span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Duration</span>
+                    <span class="project-info-value">2020 — present</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Funding</span>
+                    <span class="project-info-value">[Funding Body] · Grant No. XXXXXX<br>Industry partnership with [Retail Company]</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Principal Investigator</span>
+                    <span class="project-info-value">[Your Name], [Your University]</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Collaborators</span>
+                    <span class="project-info-value">Co-Author C ([Institution])<br>Co-Author H ([Institution])<br>Co-Author I ([Institution])</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Related courses</span>
+                    <span class="project-info-value">MGMT 5XX — Supply Chain Management<br>MGMT 6XX — Advanced Stochastic Optimization</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Output</span>
+                    <span class="project-info-value">2 papers &nbsp;·&nbsp; 1 dataset &nbsp;·&nbsp; 1 software tool</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Repository</span>
+                    <span class="project-info-value"><a href="https://github.com/yourusername/inv-sim" target="_blank" rel="noopener">github.com/yourusername/inv-sim</a></span>
+                </li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+            <p style="font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-light); margin-bottom:0.75rem;">Other projects</p>
+            <div style="display:flex; flex-direction:column; gap:0.5rem;">
+                <a href="supply-chain-resilience.html" style="display:block; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius); padding:0.75rem 1rem; font-size:0.88rem; color:var(--text-muted); text-decoration:none; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent-soft)'" onmouseout="this.style.borderColor='var(--border-soft)'">
+                    Supply Chain Resilience →
+                </a>
+                <a href="last-mile-logistics.html" style="display:block; background:var(--bg-card); border:1px solid var(--border-soft); border-radius:var(--radius); padding:0.75rem 1rem; font-size:0.88rem; color:var(--text-muted); text-decoration:none; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent-soft)'" onmouseout="this.style.borderColor='var(--border-soft)'">
+                    Last-Mile Logistics and Urban Delivery →
+                </a>
+            </div>
+        </div>
+    </aside>
+
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <p class="footer-name">[Your Name]</p>
+            <p class="footer-tagline">Operations Research &amp; Supply Chain Management</p>
+            <div class="footer-contact">
+                <a href="mailto:your.email@university.edu">✉ your.email@university.edu</a>
+                <a href="https://scholar.google.com/citations?user=YOURID" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a>
+            </div>
+        </div>
+        <div>
+            <p class="footer-heading">Navigate</p>
+            <ul class="footer-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#research">All Projects</a></li>
+                <li><a href="../index.html#teaching">Teaching</a></li>
+                <li><a href="../index.html#news">News</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer-heading">Links</p>
+            <ul class="footer-links">
+                <li><a href="#">[Your University]</a></li>
+                <li><a href="#">[Your Department]</a></li>
+                <li><a href="../cv.pdf">Download CV</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <p>Hosted on GitHub Pages</p>
+    </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
