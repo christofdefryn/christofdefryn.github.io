@@ -186,6 +186,19 @@ footer { background: #2A2A26; color: rgba(255,255,255,0.65); padding: 3.5rem 0 0
 .news-title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 500; color: var(--text); margin-bottom: 0.35rem; line-height: 1.3; }
 .news-excerpt { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
 
+/* Career timeline */
+.career-timeline { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border-soft); }
+.timeline-heading { font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.25rem; }
+.timeline-item { display: grid; grid-template-columns: 110px 1fr; gap: 0.5rem 1.25rem; padding-bottom: 1.1rem; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-years { font-size: 0.82rem; color: var(--text-light); font-variant-numeric: tabular-nums; padding-top: 0.15rem; text-align: right; white-space: nowrap; }
+.timeline-item--current .timeline-years { color: var(--accent); font-weight: 500; }
+.timeline-body { border-left: 2px solid var(--border-soft); padding-left: 1rem; }
+.timeline-item--current .timeline-body { border-left-color: var(--accent-soft); }
+.timeline-role { font-size: 0.95rem; color: var(--text); line-height: 1.4; margin-bottom: 0.15rem; }
+.timeline-item--current .timeline-role { color: var(--text); font-weight: 500; }
+.timeline-org { font-size: 0.85rem; color: var(--text-muted); }
+
 /* Responsive */
 @media (max-width: 900px) { .project-content { grid-template-columns: 1fr; gap: 2.5rem; } .project-sidebar { position: static; } }
 @media (max-width: 768px) {
