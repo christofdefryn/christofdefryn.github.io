@@ -146,7 +146,7 @@ footer { background: #2A2A26; color: rgba(255,255,255,0.65); padding: 3.5rem 0 0
 
 .project-overview h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 500; color: var(--text); margin: 2rem 0 0.75rem; }
 .project-overview h2:first-child { margin-top: 0; }
-.project-overview p { font-size: 1rem; color: var(--text-muted); line-height: 1.85; margin-bottom: 1.1rem; }
+.project-overview > p { font-size: 1rem; color: var(--text-muted); line-height: 1.85; margin-bottom: 1.1rem; }
 .project-overview ul { padding-left: 1.25rem; margin-bottom: 1.1rem; }
 .project-overview ul li { font-size: 1rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 0.35rem; }
 
