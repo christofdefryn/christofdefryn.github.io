@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching | Prof. dr. Christof Defryn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="nav-name">Home</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="about.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="teaching.html" class="active">Teaching</a></li>
+            <li><a href="index.html#news">News</a></li>
+            <li><a href="mailto:christof.defryn@uantwerpen.be">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">Teaching</span>
+</div>
+
+<!-- TEACHING -->
+<section id="teaching">
+    <div class="container">
+        <div class="section-header">
+            <p class="section-label">Teaching</p>
+            <h2 class="section-title">Courses &amp; Projects</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="teaching-grid">
+            <div class="course-card">
+                <p class="course-code">MGMT 4XX &nbsp;·&nbsp; Undergraduate</p>
+                <p class="course-title">Introduction to Operations Research</p>
+                <p class="course-desc">Foundations of linear programming, integer programming, and network optimization with applications in logistics and production planning.</p>
+            </div>
+            <div class="course-card">
+                <p class="course-code">MGMT 5XX &nbsp;·&nbsp; Master's</p>
+                <p class="course-title">Supply Chain Management</p>
+                <p class="course-desc">Strategic and operational frameworks for supply chain design, demand planning, procurement, and distribution, with case studies and guest lectures.</p>
+            </div>
+            <div class="course-card">
+                <p class="course-code">MGMT 6XX &nbsp;·&nbsp; PhD</p>
+                <p class="course-title">Advanced Stochastic Optimization</p>
+                <p class="course-desc">Doctoral seminar covering stochastic programming, robust optimization, and applications to operations management research problems.</p>
+            </div>
+            <div class="course-card">
+                <p class="course-code">Executive Education</p>
+                <p class="course-title">Data-Driven Supply Chain Decisions</p>
+                <p class="course-desc">Intensive program for practitioners covering modern OR tools, simulation, and analytics for real-world decision support.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <p class="footer-name">[Your Name]</p>
+            <p class="footer-tagline">Operations Research &amp; Supply Chain Management</p>
+            <div class="footer-contact">
+                <a href="mailto:your.email@university.edu">✉ your.email@university.edu</a>
+                <a href="https://scholar.google.be/citations?user=jMVV1igAAAAJ&hl=nl" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://orcid.org/0000-0002-5803-5412" target="_blank" rel="noopener">ORCID</a>
+                <a href="https://github.com/christofdefryn" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div>
+            <p class="footer-heading">Navigate</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="index.html#news">News</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer-heading">Links</p>
+            <ul class="footer-links">
+                <li><a href="#">[Your University]</a></li>
+                <li><a href="#">[Your Department]</a></li>
+                <li><a href="cv.pdf">Download CV</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <p>Hosted on GitHub Pages</p>
+    </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+</script>
+</body>
+</html>
