@@ -32,7 +32,7 @@
             <p class="hero-title">Associate Professor <br>UAntwerpen Business School - Faculty of Business and Economics &nbsp;·&nbsp; Antwerp, Belgium </p>
             <p class="hero-dept"></p>
             <p class="hero-bio">
-                I study optimisation models and algorithms tackling tomorrow's challenges in the field of logistics and supply chain management. <br><br>
+                I study optimisation models and algorithms to tackle tomorrow's challenges in the field of logistics and supply chain management. <br><br>
                 Building upon my expertise in Operations Research &amp; Supply Chain Management, I study multi-stakeholder interaction in supply chain collaboration, speed optimisation and vessel synchronization on inland waterways, data-driven optimisation of dynamic warehouses, circular supply chain models, and logistics optimisation in space.
             </p>
             <div class="hero-links">
@@ -53,47 +53,9 @@
             <h2 class="section-title">Recent Updates</h2>
             <div class="section-divider"></div>
         </div>
-        <div class="news-list">
-            <div class="news-item">
-                <p class="news-date">Apr 2025</p>
-                <div>
-                    <span class="news-category">Publication</span>
-                    <p class="news-title">New paper accepted at European Journal of Operational Research</p>
-                    <p class="news-excerpt">Our work on stochastic multi-echelon network design under disruption risk has been accepted for publication in EJOR. Data and code will be available upon publication.</p>
-                </div>
-            </div>
-            <div class="news-item">
-                <p class="news-date">Mar 2025</p>
-                <div>
-                    <span class="news-category">Talk</span>
-                    <p class="news-title">Invited presentation at [Conference Name]</p>
-                    <p class="news-excerpt">Presented recent results on climate-driven supply chain resilience at [Conference]. Slides are now available on the project page.</p>
-                </div>
-            </div>
-            <div class="news-item">
-                <p class="news-date">Jan 2025</p>
-                <div>
-                    <span class="news-category">Grant</span>
-                    <p class="news-title">Research grant awarded for [Project Title]</p>
-                    <p class="news-excerpt">Pleased to announce that our team received funding from [Funding Body] for a [X]-year project on [brief description].</p>
-                </div>
-            </div>
-            <div class="news-item">
-                <p class="news-date">Nov 2024</p>
-                <div>
-                    <span class="news-category">Award</span>
-                    <p class="news-title">Best paper award at [Conference Name]</p>
-                    <p class="news-excerpt">Honored to receive the best paper award in the Logistics and Transportation track for our work on last-mile delivery optimization.</p>
-                </div>
-            </div>
-            <div class="news-item">
-                <p class="news-date">Sep 2024</p>
-                <div>
-                    <span class="news-category">Teaching</span>
-                    <p class="news-title">Updated course materials published</p>
-                    <p class="news-excerpt">Revised lecture notes, case studies, and problem sets for the Supply Chain Management course are now available via the course portal.</p>
-                </div>
-            </div>
+        <div class="news-list" id="newsList"></div>
+        <div style="text-align:center; margin-top:2.5rem;" id="newsArchiveLink">
+            <a href="news.html" class="btn btn-outline">View full news archive →</a>
         </div>
     </div>
 </section>
@@ -122,18 +84,20 @@
         <div>
             <p class="footer-heading">Links</p>
             <ul class="footer-links">
-                <li><a href="#">[Your University]</a></li>
-                <li><a href="#">[Your Department]</a></li>
-                <li><a href="cv.pdf">Download CV</a></li>
+                <li><a href="https://www.uantwerpen.be/en/">University of Antwerp</a></li>
+                <li><a href="https://www.uantwerpen.be/en/research-groups/engineering-management/">Department of Engineering Management</a></li>
+                <li><a href="https://www.uantwerpen.be/en/research-groups/ant-or/">ANT/OR research group</a></li>
             </ul>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2026. All rights reserved.</p>
         <p>Hosted on GitHub Pages</p>
     </div>
 </footer>
 
+<script src="news-data.js"></script>
+<script src="news.js"></script>
 <script>
     const toggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
@@ -145,6 +109,9 @@
             if (t) { e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' }); }
         });
     });
+
+    const newsItems = loadNews('newsList', { limit: 5 });
+    if (newsItems.length <= 5) document.getElementById('newsArchiveLink').style.display = 'none';
 </script>
 </body>
 </html>

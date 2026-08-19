@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching | Prof. dr. Christof Defryn</title>
+    <title>News Archive | Prof. dr. Christof Defryn</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="about.html">About</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html" class="active">Teaching</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
             <li><a href="index.html#news">News</a></li>
             <li><a href="mailto:christof.defryn@uantwerpen.be">Contact</a></li>
         </ul>
@@ -27,39 +27,21 @@
 <div class="breadcrumb">
     <a href="index.html">Home</a>
     <span class="breadcrumb-sep">/</span>
-    <span class="breadcrumb-current">Teaching</span>
+    <a href="index.html#news">News</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">Archive</span>
 </div>
 
-<!-- TEACHING -->
-<section id="teaching">
+<!-- NEWS ARCHIVE -->
+<section id="news-archive">
     <div class="container">
         <div class="section-header">
-            <p class="section-label">Teaching</p>
-            <h2 class="section-title">Courses &amp; Projects</h2>
+            <p class="section-label">News Archive</p>
+            <h2 class="section-title">Older Updates</h2>
             <div class="section-divider"></div>
+            <p style="margin-top:1rem; color: var(--text-muted);">For the five most recent announcements, see the <a href="index.html#news">News section</a> on the homepage.</p>
         </div>
-        <div class="teaching-grid">
-            <div class="course-card">
-                <p class="course-code">MGMT 4XX &nbsp;·&nbsp; Undergraduate</p>
-                <p class="course-title">Introduction to Operations Research</p>
-                <p class="course-desc">Foundations of linear programming, integer programming, and network optimization with applications in logistics and production planning.</p>
-            </div>
-            <div class="course-card">
-                <p class="course-code">MGMT 5XX &nbsp;·&nbsp; Master's</p>
-                <p class="course-title">Supply Chain Management</p>
-                <p class="course-desc">Strategic and operational frameworks for supply chain design, demand planning, procurement, and distribution, with case studies and guest lectures.</p>
-            </div>
-            <div class="course-card">
-                <p class="course-code">MGMT 6XX &nbsp;·&nbsp; PhD</p>
-                <p class="course-title">Advanced Stochastic Optimization</p>
-                <p class="course-desc">Doctoral seminar covering stochastic programming, robust optimization, and applications to operations management research problems.</p>
-            </div>
-            <div class="course-card">
-                <p class="course-code">Executive Education</p>
-                <p class="course-title">Data-Driven Supply Chain Decisions</p>
-                <p class="course-desc">Intensive program for practitioners covering modern OR tools, simulation, and analytics for real-world decision support.</p>
-            </div>
-        </div>
+        <div class="news-list" id="newsArchiveList"></div>
     </div>
 </section>
 
@@ -99,11 +81,15 @@
     </div>
 </footer>
 
+<script src="news-data.js"></script>
+<script src="news.js"></script>
 <script>
     const toggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
     toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
     navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    loadNews('newsArchiveList', { offset: 5, emptyMessage: 'No archived posts yet — check back soon.' });
 </script>
 </body>
 </html>
