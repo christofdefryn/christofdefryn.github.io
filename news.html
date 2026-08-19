@@ -37,9 +37,8 @@
     <div class="container">
         <div class="section-header">
             <p class="section-label">News Archive</p>
-            <h2 class="section-title">Older Updates</h2>
+            <h2 class="section-title">All Updates</h2>
             <div class="section-divider"></div>
-            <p style="margin-top:1rem; color: var(--text-muted);">For the five most recent announcements, see the <a href="index.html#news">News section</a> on the homepage.</p>
         </div>
         <div class="news-list" id="newsArchiveList"></div>
     </div>
@@ -89,7 +88,7 @@
     toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
     navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
 
-    loadNews('newsArchiveList', { offset: 5, emptyMessage: 'No archived posts yet — check back soon.' });
+    loadNews('newsArchiveList', { emptyMessage: 'No news items yet — check back soon.' });
 </script>
 </body>
 </html>

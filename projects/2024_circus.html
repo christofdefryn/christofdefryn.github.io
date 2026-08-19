@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIRCUS | Prof. dr. Christof Defryn</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-name">Home</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../teaching.html">Teaching</a></li>
+            <li><a href="../index.html#news">News</a></li>
+            <li><a href="mailto:christof.defryn@uantwerpen.be">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="../research.html">Research</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">CIRCUS</span>
+</div>
+
+<header class="project-hero">
+    <div class="project-hero-inner">
+        <div class="project-hero-meta">
+            <span class="project-status status-ongoing">Ongoing</span>
+            <span class="project-hero-years">2024 — present</span>
+        </div>
+        <h1 class="project-hero-title">CIRCUS</h1>
+        <p class="project-hero-tagline">Towards a generic optimization model for circular supply chains</p>
+        <div class="tag-list">
+            <span class="tag">Circular Economy</span>
+            <span class="tag">Supply Chain Design</span>
+        </div>
+    </div>
+</header>
+
+<div class="project-content">
+    <div class="project-overview">
+        <h2>Overview</h2>
+        <p>The process of resource extraction takes a significant toll on the environment, climate, biodiversity, and the overall livability of our planet. Through proper processing of end-of-life products and material flows for reintegration into the forward supply chain, defined as circular supply chain management, this impact can be drastically reduced. Circularity considerations, however, are expensive and require the collaboration of various stakeholders, including, among others, manufacturers, customers, recycling plants, and the government.</p>
+        <p>The CIRCUS project aims to develop generic circular supply chain optimization models to facilitate the development and deployment of cost-effective and environmentally friendly circular supply chains. The envisaged models are simple (i.e., avoiding all unnecessary complexity), generic (i.e., applicable within a broad range of industries and circularity strategies), and aligned with a multi-stakeholder reality. As such, we will provide decision-makers at various levels and aiming for different objectives with clear guidance on how to seize benefits and engage in circular supply chain practices.</p>
+    </div>
+    <aside class="project-sidebar">
+        <div class="project-info-card">
+            <div class="project-info-card-header">
+                <h3>Project Info</h3>
+            </div>
+            <ul class="project-info-list">
+                <li class="project-info-item">
+                    <span class="project-info-label">Status</span>
+                    <span class="project-info-value">Ongoing, 2024 — present</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Institution</span>
+                    <span class="project-info-value">University of Antwerp · ANT/OR</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Related publication</span>
+                    <span class="project-info-value"><a href="https://doi.org/10.1016/j.clscn.2026.100334" target="_blank" rel="noopener">Circular supply chain design and optimisation through operations research (2026)</a></span>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <p class="footer-name">Prof. dr. Christof Defryn</p>
+            <p class="footer-tagline">Associate Professor</p>
+            <div class="footer-contact">
+                <a href="mailto:christof.defryn@uantwerpen.be">✉ christof.defryn@uantwerpen.be</a>
+                <a href="https://scholar.google.be/citations?user=jMVV1igAAAAJ&hl=nl" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://orcid.org/0000-0002-5803-5412" target="_blank" rel="noopener">ORCID</a>
+                <a href="https://github.com/christofdefryn" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div>
+            <p class="footer-heading">Navigate</p>
+            <ul class="footer-links">
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../teaching.html">Teaching</a></li>
+                <li><a href="../index.html#news">News</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer-heading">Links</p>
+            <ul class="footer-links">
+                <li><a href="https://www.uantwerpen.be/en/">University of Antwerp</a></li>
+                <li><a href="https://www.uantwerpen.be/en/research-groups/engineering-management/">Department of Engineering Management</a></li>
+                <li><a href="https://www.uantwerpen.be/en/research-groups/ant-or/">ANT/OR research group</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026. All rights reserved.</p>
+        <p>Hosted on GitHub Pages</p>
+    </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+</script>
+</body>
+</html>
