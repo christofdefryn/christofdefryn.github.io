@@ -54,30 +54,7 @@
         <p>The CIRCUS project aims to develop generic circular supply chain optimization models to facilitate the development and deployment of cost-effective and environmentally friendly circular supply chains. The envisaged models are simple (i.e., avoiding all unnecessary complexity), generic (i.e., applicable within a broad range of industries and circularity strategies), and aligned with a multi-stakeholder reality. As such, we will provide decision-makers at various levels and aiming for different objectives with clear guidance on how to seize benefits and engage in circular supply chain practices.</p>
 
         <h2>Project output</h2>
-        <div class="pub-list">
-            <div class="pub-card">
-                <span class="pub-type">Journal Article</span>
-                <p class="pub-title">Circular supply chain design and optimisation through operations research: A systematic review with a process-based perspective and research priorities</p>
-                <p class="pub-authors">Alix Langenaeker, Philippe Nimmegeers, Christof Defryn</p>
-                <p class="pub-venue">Cleaner Logistics and Supply Chain, Vol. 19, 2026, p. 100334</p>
-                <div class="pub-links">
-                    <a href="https://doi.org/10.1016/j.clscn.2026.100334" class="pub-link" target="_blank" rel="noopener">📄 PDF</a>
-                    <a href="https://doi.org/10.1016/j.clscn.2026.100334" class="pub-link" target="_blank" rel="noopener">🔗 DOI</a>
-                </div>
-            </div>
-            <div class="pub-card">
-                <span class="pub-type">Conference Presentation</span>
-                <p class="pub-title">From Waste to Worth: Extending The Multi-Echelon Network Design Problem Towards Circular Supply Chain Modelling</p>
-                <p class="pub-authors">Alix Langenaeker, Philippe Nimmegeers, Christof Defryn</p>
-                <p class="pub-venue">ORBEL Conference, KU Leuven, Leuven, Belgium, 5–6 Feb 2026</p>
-            </div>
-            <div class="pub-card">
-                <span class="pub-type">Conference Presentation</span>
-                <p class="pub-title">Towards a generic circular supply chain optimisation model: a systematic review and methodological outlook</p>
-                <p class="pub-authors">Alix Langenaeker, Philippe Nimmegeers, Christof Defryn</p>
-                <p class="pub-venue">Joint ORBEL-NGB Conference, Maastricht University, Maastricht, The Netherlands, 29–31 Jan 2025</p>
-            </div>
-        </div>
+        <div class="pub-list" id="outputsList"></div>
     </div>
     <aside class="project-sidebar">
         <div class="project-info-card">
@@ -141,11 +118,15 @@
     </div>
 </footer>
 
+<script src="../publications-data.js"></script>
+<script src="../publications.js"></script>
 <script>
     const toggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
     toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
     navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    renderPublications('outputsList', { tags: ['circus'] });
 </script>
 </body>
 </html>

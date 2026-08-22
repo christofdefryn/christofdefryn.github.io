@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORBITAL | Prof. dr. Christof Defryn</title>
+    <title>Proactive Decision Making in Warehouses | Prof. dr. Christof Defryn</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -29,21 +29,22 @@
     <span class="breadcrumb-sep">/</span>
     <a href="../research.html">Research</a>
     <span class="breadcrumb-sep">/</span>
-    <span class="breadcrumb-current">ORBITAL</span>
+    <span class="breadcrumb-current">Proactive Decision Making in Warehouses</span>
 </div>
 
 <header class="project-hero">
     <div class="project-hero-inner">
         <div class="project-hero-meta">
             <span class="project-status status-ongoing">Ongoing</span>
-            <span class="project-hero-years">2025 — 2029</span>
+            <span class="project-hero-years">2026 — 2030</span>
         </div>
-        <h1 class="project-hero-title">ORBITAL</h1>
-        <p class="project-hero-tagline">OR-based in-orbit service centre deployment and logistics</p>
+        <h1 class="project-hero-title">Proactive decision making in warehouses</h1>
+        <p class="project-hero-tagline">Mathematical models and optimisation algorithms for dynamic warehouse systems</p>
         <div class="tag-list">
-            <span class="tag">Space Logistics</span>
-            <span class="tag">Facility Location</span>
-            <span class="tag">On-Orbit Services</span>
+            <span class="tag">Warehousing</span>
+            <span class="tag">Order Picking</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">Demand Forecasting</span>
         </div>
     </div>
 </header>
@@ -51,8 +52,10 @@
 <div class="project-content">
     <div class="project-overview">
         <h2>Overview</h2>
-        <p>Often without our awareness, our daily lives rely heavily on thousands of satellites orbiting Earth. And this number is rapidly increasing! In addition to Earth observation missions, satellites play a crucial role in today's telecommunications network. Moreover, they provide highly accurate time stamps, essential for verifying and executing financial transactions, as well as maintaining real-time balance in the electrical grid. As satellite constellations continue to expand, there arises a greater need for improved maintenance services. These services involve tasks such as replacing old or malfunctioning modules, updating satellite technology and capabilities, and providing refuelling services.</p>
-        <p>Rather than launching these service missions from Earth, governments, space agencies, and industry partners are currently exploring the possibility of establishing an orbital service centre that could serve as a hub for deploying service missions. This research project is focused on the planning aspects of such an orbital service center. We aim to design methods to determine optimal locations for these service centers, calculate the necessary capacity and size of the facilities, and establish guidelines for replenishing their inventory. Additionally, we will define the ideal timing for dispatching specific service missions.</p>
+        <p>The overall objective of this doctoral project is to develop mathematical models and optimisation algorithms for dynamic warehouse systems, supporting proactive robot recharging and SKU repositioning operations to improve overall warehouse efficiency across interdependent warehouse processes, including storage location assignment, picking and packing.</p>
+        <p>More specifically, the project seeks to (i) integrate picking and packing optimisation under realistic operational constraints to establish a benchmark scenario, (ii) design proactive strategies for robot recharging based on stochastic workload and energy usage, (iii) develop online SKU repositioning methods to dynamically adapt warehouse layouts during operations, and (iv) evaluate the robustness and adaptability of these strategies under non-stationary demand patterns, leveraging demand forecasting techniques to inform operational decisions.</p>
+        <p>The incorporation of forecast-driven algorithms and adaptability to non-stationary demand patterns will enable warehouses to anticipate operational bottlenecks, reduce downtime, and improve throughput. These innovations not only advance the state of the art in operations research but also deliver practical tools and methodologies that enhance reliability, scalability, and responsiveness in e-commerce logistics, ultimately supporting faster delivery times and cost-efficient operations.</p>
+        <p>The project aims to deliver open-source benchmark instance generators, simulation tools (both exact and heuristic algorithms) for performance evaluation embedded in a simulation environment, and multiple scientific manuscripts detailing the proposed methodologies and their impact on operational efficiency.</p>
 
         <h2>Outputs</h2>
         <div class="pub-list" id="outputsList"></div>
@@ -65,17 +68,15 @@
             <ul class="project-info-list">
                 <li class="project-info-item">
                     <span class="project-info-label">Status</span>
-                    <span class="project-info-value">Ongoing, 2025 — present</span>
+                    <span class="project-info-value">Ongoing, 2026 — 2030</span>
                 </li>
                 <li class="project-info-item">
                     <span class="project-info-label">Collaborators</span>
-                    <span class="project-info-value">
-                        <a href="https://www.uantwerpen.be/nl/personeel/sushanta-nigudkar_28359/" target="_blank" rel="noopener">Sushanta Nigudkar</a>
-                    </span>
+                    <span class="project-info-value">Júlia Cária de Freitas</span>
                 </li>
                 <li class="project-info-item">
                     <span class="project-info-label">Funding</span>
-                    <span class="project-info-value">Flanders Research Foundation (FWO)</span>
+                    <span class="project-info-value">University of Antwerp's Special Research Fund (BOF)</span>
                 </li>
             </ul>
         </div>
@@ -126,7 +127,7 @@
     toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
     navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
 
-    renderPublications('outputsList', { tags: ['orbital'] });
+    renderPublications('outputsList', { tags: ['proactive-warehouses'] });
 </script>
 </body>
 </html>
