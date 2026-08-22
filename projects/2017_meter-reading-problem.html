@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meter Reading Problem | Prof. dr. Christof Defryn</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-name">Home</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../teaching.html">Teaching</a></li>
+            <li><a href="../index.html#news">News</a></li>
+            <li><a href="mailto:christof.defryn@uantwerpen.be">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="../research.html">Research</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">The Meter Reading Problem</span>
+</div>
+
+<header class="project-hero">
+    <div class="project-hero-inner">
+        <div class="project-hero-meta">
+            <span class="project-status status-completed">Completed</span>
+            <span class="project-hero-years">2017</span>
+        </div>
+        <h1 class="project-hero-title">The meter reading problem</h1>
+        <p class="project-hero-tagline">Data-driven optimisation and statistical modelling to improve meter reading for utility companies</p>
+        <div class="tag-list">
+            <span class="tag">Statistics</span>
+            <span class="tag">Vehicle Routing</span>
+            <span class="tag">Simulation</span>
+        </div>
+    </div>
+</header>
+
+<div class="project-content">
+    <div class="project-overview">
+        <h2>Overview</h2>
+        <p>Utility companies routinely dispatch technicians to physically read meters at customer premises, a routing-intensive operation with a direct impact on service cost. This project combines statistical modelling with vehicle routing optimisation to improve how meter reading routes are planned, using historical read data to inform routing decisions and simulation to evaluate the resulting efficiency gains.</p>
+
+        <h2>Outputs</h2>
+        <div class="pub-list" id="outputsList"></div>
+    </div>
+    <aside class="project-sidebar">
+        <div class="project-info-card">
+            <div class="project-info-card-header">
+                <h3>Project Info</h3>
+            </div>
+            <ul class="project-info-list">
+                <li class="project-info-item">
+                    <span class="project-info-label">Status</span>
+                    <span class="project-info-value">Completed, 2017</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Collaborators</span>
+                    <span class="project-info-value">
+                        <a href="https://www.linkedin.com/in/debdattasinharoy/" target="_blank" rel="noopener">Debdatta Sinha Roy</a><br>
+                        <a href="https://www.rhsmith.umd.edu/directory/bruce-l-golden" target="_blank" rel="noopener">Bruce Golden</a><br>
+                        <a href="https://www.linkedin.com/in/edward-wasil-6613682a/" target="_blank" rel="noopener">Edward Wasil</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <div>
+            <p class="footer-name">Prof. dr. Christof Defryn</p>
+            <p class="footer-tagline">Associate Professor</p>
+            <div class="footer-contact">
+                <a href="mailto:christof.defryn@uantwerpen.be">✉ christof.defryn@uantwerpen.be</a>
+                <a href="https://scholar.google.be/citations?user=jMVV1igAAAAJ&hl=nl" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://orcid.org/0000-0002-5803-5412" target="_blank" rel="noopener">ORCID</a>
+                <a href="https://github.com/christofdefryn" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div>
+            <p class="footer-heading">Navigate</p>
+            <ul class="footer-links">
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../teaching.html">Teaching</a></li>
+                <li><a href="../index.html#news">News</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer-heading">Links</p>
+            <ul class="footer-links">
+                <li><a href="https://www.uantwerpen.be/en/">University of Antwerp</a></li>
+                <li><a href="https://www.uantwerpen.be/en/research-groups/engineering-management/">Department of Engineering Management</a></li>
+                <li><a href="https://www.uantwerpen.be/en/research-groups/ant-or/">ANT/OR research group</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026. All rights reserved.</p>
+        <p>Hosted on GitHub Pages</p>
+    </div>
+</footer>
+
+<script src="../publications-data.js"></script>
+<script src="../publications.js"></script>
+<script>
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    renderPublications('outputsList', { tags: ['meter-reading-problem'] });
+</script>
+</body>
+</html>

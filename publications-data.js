@@ -89,7 +89,7 @@ const PUBLICATIONS = [
         authors: 'Debdatta Sinha Roy, Christof Defryn, Bruce Golden, Edward Wasil',
         venue: 'Computers &amp; Operations Research, 2022, p. 105844',
         year: 2022,
-        tags: [],
+        tags: ['meter-reading-problem'],
         links: [
             { label: '🔗 DOI', url: 'https://doi.org/10.1016/j.cor.2022.105844' }
         ]
