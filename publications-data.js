@@ -51,7 +51,7 @@ const PUBLICATIONS = [
         authors: 'Thomas Hacardiaux, Christof Defryn, Jean-Sébastien Tancrez, Lotte Verdonck',
         venue: 'International Transactions in Operational Research, Vol. 31, No. 1, 2024, pp. 370–395',
         year: 2024,
-        tags: [],
+        tags: ['collaborative-location-inventory'],
         links: [
             { label: '📄 PDF', url: 'https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/itor.13158' },
             { label: '🔗 DOI', url: 'https://doi.org/10.1111/itor.13158' }
@@ -114,7 +114,7 @@ const PUBLICATIONS = [
         authors: 'Thomas Hacardiaux, Christof Defryn, Jean-Sébastien Tancrez, Lotte Verdonck',
         venue: 'OR Spectrum, Vol. 44, No. 1, 2022, pp. 121–153',
         year: 2022,
-        tags: [],
+        tags: ['collaborative-location-inventory'],
         links: [
             { label: '📄 PDF', url: 'https://link.springer.com/content/pdf/10.1007/s00291-021-00651-y.pdf' },
             { label: '🔗 DOI', url: 'https://doi.org/10.1007/s00291-021-00651-y' }
@@ -459,6 +459,58 @@ const PUBLICATIONS = [
         venue: 'MAPSP 2019: 14th Workshop on Models and Algorithms for Planning and Scheduling Problems, Renesse, Netherlands, 2019',
         year: 2019,
         tags: ['velocity-optimisation'],
+        featured: false
+    },
+
+    // --- In-orbit facility location ---
+    {
+        id: 'iofl-2026-ifors',
+        type: 'Conference Presentation',
+        title: 'Locating a facility in space: An operations research review',
+        authors: 'Pieter Deleye and Christof Defryn',
+        venue: 'IFORS Conference, Vienna, Austria, 12–17 Jul 2026',
+        year: 2026,
+        tags: ['in-orbit-facility-location'],
+        featured: false
+    },
+    {
+        id: 'iofl-2026-orbel',
+        type: 'Conference Presentation',
+        title: 'Locating a facility in space: A review of cover and facility location problems in space-based applications',
+        authors: 'Pieter Deleye and Christof Defryn',
+        venue: 'ORBEL Conference, KU Leuven, Leuven, Belgium, 5–6 Feb 2026',
+        year: 2026,
+        tags: ['in-orbit-facility-location'],
+        featured: false
+    },
+    {
+        id: 'iofl-2025-orbel-ngb',
+        type: 'Conference Presentation',
+        title: 'Multi-objective Traveling Salesman Problem for in-orbit spacecraft routing',
+        authors: 'Pieter Deleye and Christof Defryn',
+        venue: 'Joint ORBEL-NGB Conference, Maastricht University, Maastricht, The Netherlands, 29–31 Jan 2025',
+        year: 2025,
+        tags: ['in-orbit-facility-location'],
+        featured: false
+    },
+    {
+        id: 'iofl-2024-tsl-nantes',
+        type: 'Conference Presentation',
+        title: "Periodicity in satellite's trajectories as a tool for improved in-orbit servicing scheduling problems",
+        authors: 'Pieter Deleye and Christof Defryn',
+        venue: 'TSL Workshop on "Optimizing Transportation and Logistics under Uncertainty", Nantes, France, 25–27 Sep 2024',
+        year: 2024,
+        tags: ['in-orbit-facility-location'],
+        featured: false
+    },
+    {
+        id: 'iofl-2024-orbel38',
+        type: 'Conference Presentation',
+        title: 'Advancements in Space Logistics: The Moving Target TSP Paradigm',
+        authors: 'Pieter Deleye and Christof Defryn',
+        venue: 'ORBEL38: 38th Annual Conference of the Belgian Operations Research Society, University of Antwerp, Antwerp, Belgium, 8–9 Feb 2024',
+        year: 2024,
+        tags: ['in-orbit-facility-location'],
         featured: false
     },
 
