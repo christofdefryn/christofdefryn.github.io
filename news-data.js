@@ -36,7 +36,7 @@ const NEWS_ITEMS = [
     {
         "date": "2024-06-12",
         "category": "Publication",
-        "title": "New paper accepted at Manufacturing &amp; Service Operations Management",
+        "title": "New paper accepted at Manufacturing & Service Operations Management",
         "excerpt": "Our work on dynamic inventory policies with demand learning in omnichannel retail has been accepted for publication."
     },
     {

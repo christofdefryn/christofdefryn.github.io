@@ -1,6 +1,7 @@
 /*
  * Shared publications renderer. Reads the PUBLICATIONS array (defined in
  * publications-data.js, which must be loaded before this script).
+ * Depends on escapeHtml() from utils.js.
  *
  * research.html calls renderPublications('pubList', { featuredOnly: true })
  * for the curated highlights list, and summarizeOutputs(tag) for each
@@ -22,21 +23,21 @@ function renderPublications(containerId, { tags = null, featuredOnly = false, em
     const items = getPublications({ tags, featuredOnly });
 
     if (items.length === 0) {
-        container.innerHTML = `<p style="color: var(--text-muted);">${emptyMessage}</p>`;
+        container.innerHTML = `<p style="color: var(--text-muted);">${escapeHtml(emptyMessage)}</p>`;
         return items;
     }
 
     container.innerHTML = items.map(pub => {
         const links = (pub.links || []).map(l =>
-            `<a href="${l.url}" class="pub-link" target="_blank" rel="noopener">${l.label}</a>`
+            `<a href="${escapeHtml(l.url)}" class="pub-link" target="_blank" rel="noopener">${escapeHtml(l.label)}</a>`
         ).join('');
         return `
             <div class="pub-card">
-                <span class="pub-type">${pub.type}</span>
-                <p class="pub-title">${pub.title}</p>
-                ${pub.authors ? `<p class="pub-authors">${pub.authors}</p>` : ''}
-                ${pub.venue ? `<p class="pub-venue">${pub.venue}</p>` : ''}
-                ${pub.abstract ? `<p class="pub-abstract">${pub.abstract}</p>` : ''}
+                <span class="pub-type">${escapeHtml(pub.type)}</span>
+                <p class="pub-title">${escapeHtml(pub.title)}</p>
+                ${pub.authors ? `<p class="pub-authors">${escapeHtml(pub.authors)}</p>` : ''}
+                ${pub.venue ? `<p class="pub-venue">${escapeHtml(pub.venue)}</p>` : ''}
+                ${pub.abstract ? `<p class="pub-abstract">${escapeHtml(pub.abstract)}</p>` : ''}
                 ${links ? `<div class="pub-links">${links}</div>` : ''}
             </div>`;
     }).join('');

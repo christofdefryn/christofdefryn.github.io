@@ -1,7 +1,7 @@
 /*
  * Shared news renderer. Reads the NEWS_ITEMS array (defined in news-data.js,
  * which must be loaded before this script), sorts newest-first, and renders
- * a slice into a container.
+ * a slice into a container. Depends on escapeHtml() from utils.js.
  * Homepage calls loadNews('newsList', { limit: 5 }) for the latest posts.
  * The archive page calls loadNews('newsArchiveList', { offset: 5 }) for the rest.
  */
@@ -13,7 +13,7 @@ function loadNews(containerId, { offset = 0, limit = Infinity, emptyMessage = 'N
     const slice = items.slice(offset, offset + limit);
 
     if (slice.length === 0) {
-        container.innerHTML = `<p style="color: var(--text-muted);">${emptyMessage}</p>`;
+        container.innerHTML = `<p style="color: var(--text-muted);">${escapeHtml(emptyMessage)}</p>`;
         return items;
     }
 
@@ -25,9 +25,9 @@ function loadNews(containerId, { offset = 0, limit = Infinity, emptyMessage = 'N
             <div class="news-item">
                 <p class="news-date">${dateLabel}</p>
                 <div>
-                    <span class="news-category">${item.category}</span>
-                    <p class="news-title">${item.title}</p>
-                    <p class="news-excerpt">${item.excerpt}</p>
+                    <span class="news-category">${escapeHtml(item.category)}</span>
+                    <p class="news-title">${escapeHtml(item.title)}</p>
+                    <p class="news-excerpt">${escapeHtml(item.excerpt)}</p>
                 </div>
             </div>`;
     }).join('');

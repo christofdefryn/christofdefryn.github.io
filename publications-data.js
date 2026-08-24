@@ -87,7 +87,7 @@ const PUBLICATIONS = [
         type: 'Journal Article',
         title: 'Data-Driven Optimization and Statistical Modeling to Improve Meter Reading for Utility Companies',
         authors: 'Debdatta Sinha Roy, Christof Defryn, Bruce Golden, Edward Wasil',
-        venue: 'Computers &amp; Operations Research, 2022, p. 105844',
+        venue: 'Computers & Operations Research, 2022, p. 105844',
         year: 2022,
         tags: ['meter-reading-problem'],
         links: [
@@ -177,7 +177,7 @@ const PUBLICATIONS = [
         type: 'Journal Article',
         title: 'A fast two-level variable neighborhood search heuristic for the clustered vehicle routing problem',
         authors: 'Christof Defryn and Kenneth Sörensen',
-        venue: 'Computers &amp; Operations Research, Vol. 83, 2017, pp. 78–94',
+        venue: 'Computers & Operations Research, Vol. 83, 2017, pp. 78–94',
         year: 2017,
         tags: ['horizontal-logistics-collaboration'],
         links: [
