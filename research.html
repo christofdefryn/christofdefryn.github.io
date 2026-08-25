@@ -3,11 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'">
-    <title>Research | Prof. dr. Christof Defryn</title>
-    <link rel="stylesheet" href="style.css">
+{% include head.html title="Research | Prof. dr. Christof Defryn" prefix="" %}
 </head>
 <body>
 
@@ -232,12 +228,8 @@
 <script src="utils.js"></script>
 <script src="publications-data.js"></script>
 <script src="publications.js"></script>
+<script src="nav.js"></script>
 <script>
-    const toggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
-
     document.querySelectorAll('.project-card-stats[data-project-tag]').forEach(el => {
         el.innerHTML = summarizeOutputs(el.dataset.projectTag);
     });

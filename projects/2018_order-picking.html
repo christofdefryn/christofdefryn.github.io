@@ -1,87 +1,21 @@
 ---
+layout: project
+title: "Order Picking"
+heading: "Order picking"
+tagline: "Optimising batching, routing, and repositioning decisions in warehouse order picking"
+status: completed
+years: "2018 — 2024"
+tags: ["Order Picking", "Vehicle Routing", "Metaheuristics"]
+pubtag: order-picking
+collaborators:
+  - name: "Son Thai Tran"
+    url: "https://www.linkedin.com/in/tranthaison/"
+  - name: "Farzaneh Rajabighamchi"
+    url: "https://www.linkedin.com/in/farzaneh-rajabighamchi-9b2313131/"
+  - name: "Rui Jorge Almeida"
+    url: "https://www.linkedin.com/in/rj-almeida/"
+  - name: "Inneke Van Nieuwenhuyse"
+    url: "https://www.linkedin.com/in/inneke-van-nieuwenhuyse-0017907/"
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'">
-    <title>Order Picking | Prof. dr. Christof Defryn</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-
-{% include nav.html prefix="../" %}
-
-<div class="breadcrumb">
-    <a href="../index.html">Home</a>
-    <span class="breadcrumb-sep">/</span>
-    <a href="../research.html">Research</a>
-    <span class="breadcrumb-sep">/</span>
-    <span class="breadcrumb-current">Order Picking</span>
-</div>
-
-<header class="project-hero">
-    <div class="project-hero-inner">
-        <div class="project-hero-meta">
-            <span class="project-status status-completed">Completed</span>
-            <span class="project-hero-years">2018 — 2024</span>
-        </div>
-        <h1 class="project-hero-title">Order picking</h1>
-        <p class="project-hero-tagline">Optimising batching, routing, and repositioning decisions in warehouse order picking</p>
-        <div class="tag-list">
-            <span class="tag">Order Picking</span>
-            <span class="tag">Vehicle Routing</span>
-            <span class="tag">Metaheuristics</span>
-        </div>
-    </div>
-</header>
-
-<div class="project-content">
-    <div class="project-overview">
-        <h2>Overview</h2>
-        <p>This project addresses key operational challenges in the order picking process — the most labour-intensive activity in warehouse operations. Over the course of the project, we developed exact and heuristic algorithms for order batching, picker routing, and SKU repositioning, and explored how anticipatory strategies and demand forecasting can improve picking efficiency under uncertainty.</p>
-        <p>Methodological contributions include exact and metaheuristic formulations building on the generalized travelling salesman problem and the vehicle routing problem, evaluated and disseminated across a series of international conferences, workshops, and symposia.</p>
-
-        <h2>Outputs</h2>
-        <div class="pub-list" id="outputsList"></div>
-    </div>
-    <aside class="project-sidebar">
-        <div class="project-info-card">
-            <div class="project-info-card-header">
-                <h3>Project Info</h3>
-            </div>
-            <ul class="project-info-list">
-                <li class="project-info-item">
-                    <span class="project-info-label">Status</span>
-                    <span class="project-info-value">Completed, 2018 — 2024</span>
-                </li>
-                <li class="project-info-item">
-                    <span class="project-info-label">Collaborators</span>
-                    <span class="project-info-value">
-                        <a href="https://www.linkedin.com/in/tranthaison/" target="_blank" rel="noopener">Son Thai Tran</a><br>
-                        <a href="https://www.linkedin.com/in/farzaneh-rajabighamchi-9b2313131/" target="_blank" rel="noopener">Farzaneh Rajabighamchi</a><br>
-                        <a href="https://www.linkedin.com/in/rj-almeida/" target="_blank" rel="noopener">Rui Jorge Almeida</a><br>
-                        <a href="https://www.linkedin.com/in/inneke-van-nieuwenhuyse-0017907/" target="_blank" rel="noopener">Inneke Van Nieuwenhuyse</a>
-                    </span>
-                </li>
-            </ul>
-        </div>
-    </aside>
-</div>
-
-{% include footer.html prefix="../" %}
-
-<script src="../utils.js"></script>
-<script src="../publications-data.js"></script>
-<script src="../publications.js"></script>
-<script>
-    const toggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
-
-    renderPublications('outputsList', { tags: ['order-picking'] });
-</script>
-</body>
-</html>
+<p>This project addresses key operational challenges in the order picking process — the most labour-intensive activity in warehouse operations. Over the course of the project, we developed exact and heuristic algorithms for order batching, picker routing, and SKU repositioning, and explored how anticipatory strategies and demand forecasting can improve picking efficiency under uncertainty.</p>
+<p>Methodological contributions include exact and metaheuristic formulations building on the generalized travelling salesman problem and the vehicle routing problem, evaluated and disseminated across a series of international conferences, workshops, and symposia.</p>

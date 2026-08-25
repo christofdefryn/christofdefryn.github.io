@@ -1,88 +1,16 @@
 ---
+layout: project
+title: "ORBITAL"
+heading: "ORBITAL"
+tagline: "OR-based in-orbit service centre deployment and logistics"
+status: ongoing
+years: "2025 — 2029"
+tags: ["Space Logistics", "Facility Location", "On-Orbit Services"]
+pubtag: orbital
+collaborators:
+  - name: "Sushanta Nigudkar"
+    url: "https://www.uantwerpen.be/nl/personeel/sushanta-nigudkar_28359/"
+funding: "Flanders Research Foundation (FWO)"
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'">
-    <title>ORBITAL | Prof. dr. Christof Defryn</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-
-{% include nav.html prefix="../" %}
-
-<div class="breadcrumb">
-    <a href="../index.html">Home</a>
-    <span class="breadcrumb-sep">/</span>
-    <a href="../research.html">Research</a>
-    <span class="breadcrumb-sep">/</span>
-    <span class="breadcrumb-current">ORBITAL</span>
-</div>
-
-<header class="project-hero">
-    <div class="project-hero-inner">
-        <div class="project-hero-meta">
-            <span class="project-status status-ongoing">Ongoing</span>
-            <span class="project-hero-years">2025 — 2029</span>
-        </div>
-        <h1 class="project-hero-title">ORBITAL</h1>
-        <p class="project-hero-tagline">OR-based in-orbit service centre deployment and logistics</p>
-        <div class="tag-list">
-            <span class="tag">Space Logistics</span>
-            <span class="tag">Facility Location</span>
-            <span class="tag">On-Orbit Services</span>
-        </div>
-    </div>
-</header>
-
-<div class="project-content">
-    <div class="project-overview">
-        <h2>Overview</h2>
-        <p>Often without our awareness, our daily lives rely heavily on thousands of satellites orbiting Earth. And this number is rapidly increasing! In addition to Earth observation missions, satellites play a crucial role in today's telecommunications network. Moreover, they provide highly accurate time stamps, essential for verifying and executing financial transactions, as well as maintaining real-time balance in the electrical grid. As satellite constellations continue to expand, there arises a greater need for improved maintenance services. These services involve tasks such as replacing old or malfunctioning modules, updating satellite technology and capabilities, and providing refuelling services.</p>
-        <p>Rather than launching these service missions from Earth, governments, space agencies, and industry partners are currently exploring the possibility of establishing an orbital service centre that could serve as a hub for deploying service missions. This research project is focused on the planning aspects of such an orbital service center. We aim to design methods to determine optimal locations for these service centers, calculate the necessary capacity and size of the facilities, and establish guidelines for replenishing their inventory. Additionally, we will define the ideal timing for dispatching specific service missions.</p>
-
-        <h2>Outputs</h2>
-        <div class="pub-list" id="outputsList"></div>
-    </div>
-    <aside class="project-sidebar">
-        <div class="project-info-card">
-            <div class="project-info-card-header">
-                <h3>Project Info</h3>
-            </div>
-            <ul class="project-info-list">
-                <li class="project-info-item">
-                    <span class="project-info-label">Status</span>
-                    <span class="project-info-value">Ongoing, 2025 — 2029</span>
-                </li>
-                <li class="project-info-item">
-                    <span class="project-info-label">Collaborators</span>
-                    <span class="project-info-value">
-                        <a href="https://www.uantwerpen.be/nl/personeel/sushanta-nigudkar_28359/" target="_blank" rel="noopener">Sushanta Nigudkar</a>
-                    </span>
-                </li>
-                <li class="project-info-item">
-                    <span class="project-info-label">Funding</span>
-                    <span class="project-info-value">Flanders Research Foundation (FWO)</span>
-                </li>
-            </ul>
-        </div>
-    </aside>
-</div>
-
-{% include footer.html prefix="../" %}
-
-<script src="../utils.js"></script>
-<script src="../publications-data.js"></script>
-<script src="../publications.js"></script>
-<script>
-    const toggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
-
-    renderPublications('outputsList', { tags: ['orbital'] });
-</script>
-</body>
-</html>
+<p>Often without our awareness, our daily lives rely heavily on thousands of satellites orbiting Earth. And this number is rapidly increasing! In addition to Earth observation missions, satellites play a crucial role in today's telecommunications network. Moreover, they provide highly accurate time stamps, essential for verifying and executing financial transactions, as well as maintaining real-time balance in the electrical grid. As satellite constellations continue to expand, there arises a greater need for improved maintenance services. These services involve tasks such as replacing old or malfunctioning modules, updating satellite technology and capabilities, and providing refuelling services.</p>
+<p>Rather than launching these service missions from Earth, governments, space agencies, and industry partners are currently exploring the possibility of establishing an orbital service centre that could serve as a hub for deploying service missions. This research project is focused on the planning aspects of such an orbital service center. We aim to design methods to determine optimal locations for these service centers, calculate the necessary capacity and size of the facilities, and establish guidelines for replenishing their inventory. Additionally, we will define the ideal timing for dispatching specific service missions.</p>

@@ -1,83 +1,15 @@
 ---
+layout: project
+title: "In-Orbit Facility Location"
+heading: "In-orbit facility location"
+tagline: "Establishing a network of in-orbit facilities for satellite servicing"
+status: ongoing
+years: "2023 — 2029"
+tags: ["Space Logistics", "Facility Location"]
+pubtag: in-orbit-facility-location
+collaborators:
+  - name: "Pieter Deleye"
+    url: "https://www.uantwerpen.be/en/staff/pieter-deleye_25741/"
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'">
-    <title>In-Orbit Facility Location | Prof. dr. Christof Defryn</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-
-{% include nav.html prefix="../" %}
-
-<div class="breadcrumb">
-    <a href="../index.html">Home</a>
-    <span class="breadcrumb-sep">/</span>
-    <a href="../research.html">Research</a>
-    <span class="breadcrumb-sep">/</span>
-    <span class="breadcrumb-current">In-Orbit Facility Location</span>
-</div>
-
-<header class="project-hero">
-    <div class="project-hero-inner">
-        <div class="project-hero-meta">
-            <span class="project-status status-ongoing">Ongoing</span>
-            <span class="project-hero-years">2023 — 2029</span>
-        </div>
-        <h1 class="project-hero-title">In-orbit facility location</h1>
-        <p class="project-hero-tagline">Establishing a network of in-orbit facilities for satellite servicing</p>
-        <div class="tag-list">
-            <span class="tag">Space Logistics</span>
-            <span class="tag">Facility Location</span>
-        </div>
-    </div>
-</header>
-
-<div class="project-content">
-    <div class="project-overview">
-        <h2>Overview</h2>
-        <p>This project studies how to establish a network of in-orbit facilities capable of servicing a growing population of satellites. We investigate where such facilities should be located, how many are needed, and how their coverage should be sized, adapting classical facility location and covering location models to the constraints of space-based operations — including the periodic, ever-changing geometry of satellite orbits.</p>
-        <p>We specifically study how classical Operations Research models for facility location and covering translate to an in-orbit space context.</p>
-
-        <h2>Outputs</h2>
-        <div class="pub-list" id="outputsList"></div>
-    </div>
-    <aside class="project-sidebar">
-        <div class="project-info-card">
-            <div class="project-info-card-header">
-                <h3>Project Info</h3>
-            </div>
-            <ul class="project-info-list">
-                <li class="project-info-item">
-                    <span class="project-info-label">Status</span>
-                    <span class="project-info-value">Ongoing, 2023 — 2029</span>
-                </li>
-                <li class="project-info-item">
-                    <span class="project-info-label">Collaborators</span>
-                    <span class="project-info-value">
-                        <a href="https://www.uantwerpen.be/en/staff/pieter-deleye_25741/" target="_blank" rel="noopener">Pieter Deleye</a>
-                    </span>
-                </li>
-            </ul>
-        </div>
-    </aside>
-</div>
-
-{% include footer.html prefix="../" %}
-
-<script src="../utils.js"></script>
-<script src="../publications-data.js"></script>
-<script src="../publications.js"></script>
-<script>
-    const toggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
-
-    renderPublications('outputsList', { tags: ['in-orbit-facility-location'] });
-</script>
-</body>
-</html>
+<p>This project studies how to establish a network of in-orbit facilities capable of servicing a growing population of satellites. We investigate where such facilities should be located, how many are needed, and how their coverage should be sized, adapting classical facility location and covering location models to the constraints of space-based operations — including the periodic, ever-changing geometry of satellite orbits.</p>
+<p>We specifically study how classical Operations Research models for facility location and covering translate to an in-orbit space context.</p>

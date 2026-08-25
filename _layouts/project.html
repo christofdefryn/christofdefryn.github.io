@@ -1,0 +1,76 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html title=page.title | append: " | Prof. dr. Christof Defryn" prefix="../" %}
+</head>
+<body>
+
+{% include nav.html prefix="../" %}
+
+<div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="../research.html">Research</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">{{ page.title }}</span>
+</div>
+
+<header class="project-hero">
+    <div class="project-hero-inner">
+        <div class="project-hero-meta">
+            <span class="project-status status-{{ page.status }}">{{ page.status | capitalize }}</span>
+            <span class="project-hero-years">{{ page.years }}</span>
+        </div>
+        <h1 class="project-hero-title">{{ page.heading }}</h1>
+        <p class="project-hero-tagline">{{ page.tagline }}</p>
+        <div class="tag-list">
+{% for tag in page.tags %}            <span class="tag">{{ tag }}</span>
+{% endfor %}        </div>
+    </div>
+</header>
+
+<div class="project-content">
+    <div class="project-overview">
+        <h2>{{ page.overview_heading | default: "Overview" }}</h2>
+{{ content }}
+        <h2>{{ page.outputs_heading | default: "Outputs" }}</h2>
+        <div class="pub-list" id="outputsList"></div>
+    </div>
+    <aside class="project-sidebar">
+        <div class="project-info-card">
+            <div class="project-info-card-header">
+                <h3>Project Info</h3>
+            </div>
+            <ul class="project-info-list">
+                <li class="project-info-item">
+                    <span class="project-info-label">Status</span>
+                    <span class="project-info-value">{{ page.status | capitalize }}, {{ page.years }}</span>
+                </li>
+                <li class="project-info-item">
+                    <span class="project-info-label">Collaborators</span>
+                    <span class="project-info-value">
+{% for c in page.collaborators %}                        {% if c.url %}<a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% unless forloop.last %}<br>{% endunless %}
+{% endfor %}                    </span>
+                </li>
+{% if page.funding %}                <li class="project-info-item">
+                    <span class="project-info-label">Funding</span>
+                    <span class="project-info-value">{{ page.funding }}</span>
+                </li>
+{% endif %}            </ul>
+        </div>
+    </aside>
+</div>
+
+{% include footer.html prefix="../" %}
+
+<script src="../utils.js"></script>
+<script src="../publications-data.js"></script>
+<script src="../publications.js"></script>
+<script src="../nav.js"></script>
+<script>
+    renderPublications('outputsList', { tags: ['{{ page.pubtag }}'] });
+</script>
+</body>
+</html>
