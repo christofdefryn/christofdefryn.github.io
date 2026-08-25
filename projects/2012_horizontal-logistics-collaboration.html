@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +11,7 @@
 </head>
 <body>
 
-<nav>
-    <div class="nav-inner">
-        <a href="../index.html" class="nav-name">Home</a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../research.html">Research</a></li>
-            <li><a href="../teaching.html">Teaching</a></li>
-            <li><a href="../index.html#news">News</a></li>
-            <li><a href="mailto:christof.defryn@uantwerpen.be">Contact</a></li>
-        </ul>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
-    </div>
-</nav>
+{% include nav.html prefix="../" %}
 
 <div class="breadcrumb">
     <a href="../index.html">Home</a>
@@ -85,41 +73,7 @@
     </aside>
 </div>
 
-<footer>
-    <div class="footer-inner">
-        <div>
-            <p class="footer-name">Prof. dr. Christof Defryn</p>
-            <p class="footer-tagline">Associate Professor</p>
-            <div class="footer-contact">
-                <a href="mailto:christof.defryn@uantwerpen.be">✉ christof.defryn@uantwerpen.be</a>
-                <a href="https://scholar.google.be/citations?user=jMVV1igAAAAJ&hl=nl" target="_blank" rel="noopener">Google Scholar</a>
-                <a href="https://orcid.org/0000-0002-5803-5412" target="_blank" rel="noopener">ORCID</a>
-                <a href="https://github.com/christofdefryn" target="_blank" rel="noopener">GitHub</a>
-            </div>
-        </div>
-        <div>
-            <p class="footer-heading">Navigate</p>
-            <ul class="footer-links">
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../research.html">Research</a></li>
-                <li><a href="../teaching.html">Teaching</a></li>
-                <li><a href="../index.html#news">News</a></li>
-            </ul>
-        </div>
-        <div>
-            <p class="footer-heading">Links</p>
-            <ul class="footer-links">
-                <li><a href="https://www.uantwerpen.be/en/">University of Antwerp</a></li>
-                <li><a href="https://www.uantwerpen.be/en/research-groups/engineering-management/">Department of Engineering Management</a></li>
-                <li><a href="https://www.uantwerpen.be/en/research-groups/ant-or/">ANT/OR research group</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026. All rights reserved.</p>
-        <p>Hosted on GitHub Pages</p>
-    </div>
-</footer>
+{% include footer.html prefix="../" %}
 
 <script src="../utils.js"></script>
 <script src="../publications-data.js"></script>

@@ -1,0 +1,15 @@
+<nav>
+    <div class="nav-inner">
+        <a href="{{ include.prefix }}index.html" class="nav-name">Home</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="{{ include.prefix }}about.html"{% if include.active == "about" %} class="active"{% endif %}>About</a></li>
+            <li><a href="{{ include.prefix }}research.html"{% if include.active == "research" %} class="active"{% endif %}>Research</a></li>
+            <li><a href="{{ include.prefix }}teaching.html"{% if include.active == "teaching" %} class="active"{% endif %}>Teaching</a></li>
+            <li><a href="{% if include.news_self %}#news{% else %}{{ include.prefix }}index.html#news{% endif %}">News</a></li>
+            <li><a href="mailto:christof.defryn@uantwerpen.be">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
