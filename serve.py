@@ -171,6 +171,10 @@ def render(template, context):
             cond = eval_condition(args, context)
             out.append(render(body if not cond else "", context))
             pos = end
+        elif tag == "assign":
+            var, _, val_expr = args.partition("=")
+            context = dict(context, **{var.strip(): eval_expr(val_expr.strip(), context)})
+            pos = m.end()
         elif tag == "include":
             name, _, param_str = args.partition(" ")
             params = {k: eval_expr(v, context) for k, v in parse_params(param_str).items()}

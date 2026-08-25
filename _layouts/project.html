@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-{% include head.html title=page.title | append: " | Prof. dr. Christof Defryn" prefix="../" %}
+{% assign page_title = page.title | append: " | Prof. dr. Christof Defryn" %}{% include head.html title=page_title prefix="../" %}
 </head>
 <body>
 
