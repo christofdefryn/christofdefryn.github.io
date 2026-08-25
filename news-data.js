@@ -4,69 +4,27 @@
  */
 const NEWS_ITEMS = [
     {
-        "date": "2025-04-15",
-        "category": "Publication",
-        "title": "New paper accepted at European Journal of Operational Research",
-        "excerpt": "Our work on stochastic multi-echelon network design under disruption risk has been accepted for publication in EJOR. Data and code will be available upon publication."
+        "date": "2026-07-13",
+        "category": "Conference",
+        "title": "Launched the OR in Space stream at IFORS 2026 in Vienna",
+        "excerpt": "Launched the OR in Space stream — four sessions and over ten talks bridging Operations Research and Space Engineering — at IFORS 2026 in Vienna. Two of my PhD researchers, Pieter Deleye and Sushanta Nigudkar, presented the outcomes of their first papers, now submitted for publication."
     },
     {
-        "date": "2025-03-10",
+        "date": "2026-05-19",
         "category": "Talk",
-        "title": "Invited presentation at [Conference Name]",
-        "excerpt": "Presented recent results on climate-driven supply chain resilience at [Conference]. Slides are now available on the project page."
+        "title": "Public talk at Pint of Science Belgium",
+        "excerpt": "Used LEGO bricks to explore the tension between individual and collective decision-making — from the Tragedy of the Commons and the Braess paradox to natural resource depletion, traffic congestion, and inefficiencies in today's logistics systems. A great evening of science communication at Café Boekowski in Antwerp."
     },
     {
-        "date": "2025-01-20",
-        "category": "Grant",
-        "title": "Research grant awarded for [Project Title]",
-        "excerpt": "Pleased to announce that our team received funding from [Funding Body] for a [X]-year project on [brief description]."
-    },
-    {
-        "date": "2024-11-08",
-        "category": "Award",
-        "title": "Best paper award at [Conference Name]",
-        "excerpt": "Honored to receive the best paper award in the Logistics and Transportation track for our work on last-mile delivery optimization."
-    },
-    {
-        "date": "2024-09-05",
-        "category": "Teaching",
-        "title": "Updated course materials published",
-        "excerpt": "Revised lecture notes, case studies, and problem sets for the Supply Chain Management course are now available via the course portal."
-    },
-    {
-        "date": "2024-06-12",
+        "date": "2026-04-29",
         "category": "Publication",
-        "title": "New paper accepted at Manufacturing & Service Operations Management",
-        "excerpt": "Our work on dynamic inventory policies with demand learning in omnichannel retail has been accepted for publication."
+        "title": "New publication: Circular supply chain design and optimisation through operations research",
+        "excerpt": "New systematic review with Alix Langenaeker and Philippe Nimmegeers on where operations research models fall short for circular supply chains, proposing a generic process-based framework across seven circular strategies — now published in Cleaner Logistics and Supply Chain."
     },
     {
-        "date": "2024-04-18",
-        "category": "Talk",
-        "title": "Invited seminar at [University Name]",
-        "excerpt": "Presented ongoing work on inventory optimization in omnichannel retail as part of the [Department] seminar series."
-    },
-    {
-        "date": "2024-02-14",
-        "category": "Grant",
-        "title": "Collaborative research grant awarded with [Partner Institution]",
-        "excerpt": "Received joint funding to study data-driven optimisation of dynamic warehouses over a two-year period."
-    },
-    {
-        "date": "2023-11-09",
-        "category": "Award",
-        "title": "Recognized with [Award Name] for excellence in teaching",
-        "excerpt": "Honored for contributions to the Operations Research curriculum and student mentorship."
-    },
-    {
-        "date": "2023-09-04",
-        "category": "Teaching",
-        "title": "Launched new PhD seminar on Advanced Stochastic Optimization",
-        "excerpt": "Introduced a doctoral seminar covering stochastic programming, robust optimization, and applications to operations management."
-    },
-    {
-        "date": "2023-05-22",
-        "category": "Publication",
-        "title": "Paper accepted at Transportation Science",
-        "excerpt": "Our branch-and-price approach to last-mile delivery route optimization under time-window constraints has been accepted for publication."
+        "date": "2026-02-05",
+        "category": "Conference",
+        "title": "ANT/OR strongly represented at ORBEL 2026",
+        "excerpt": "The ANT/OR research group had a strong presence at ORBEL, the annual conference of the Belgian Operational Research Society, held this year at KU Leuven — with seven contributions spanning circular supply chains, space logistics, vehicle routing, and metaheuristics."
     }
 ];
