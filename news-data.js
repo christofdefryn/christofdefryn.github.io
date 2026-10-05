@@ -4,6 +4,12 @@
  */
 const NEWS_ITEMS = [
     {
+        "date": "2026-09-29",
+        "category": "Talk",
+        "title": "Session at the Supply Chain Professionals Club",
+        "excerpt": "Gave a session on collaboration and decision-making in complex supply chains at the Supply Chain Professionals Club peer exchange, organised by Slimstock. Participants experienced some of the concepts first-hand in a simulation using LEGO bricks, after which we discussed how these experiences relate to real-world practice."
+    },
+    {
         "date": "2026-07-13",
         "category": "Conference",
         "title": "Launched the OR in Space stream at IFORS 2026 in Vienna",
