@@ -224,18 +224,6 @@ const PUBLICATIONS = [
 
     // --- ORBITAL ---
     {
-        id: 'orbital-repo-oostoolkit',
-        type: 'GitHub Repository',
-        title: 'NbodyWalkerDelta — On-Orbit Servicing Toolkit',
-        abstract: 'A comprehensive simulation toolkit for on-orbit servicing missions, integrating orbital mechanics, stochastic satellite health modelling, trajectory optimization, and scheduling.',
-        year: 2026,
-        tags: ['orbital'],
-        featured: false,
-        links: [
-            { label: '🔗 View on GitHub', url: 'https://github.com/nsushant/OOSToolkit' }
-        ]
-    },
-    {
         id: 'orbital-repo-oos-mdls',
         type: 'GitHub Repository',
         title: 'Multi-objective mission planning for depot-supported on-orbit servicing',
