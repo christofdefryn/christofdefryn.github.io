@@ -26,11 +26,36 @@ function loadNews(containerId, { offset = 0, limit = Infinity, emptyMessage = 'N
                 <p class="news-date">${dateLabel}</p>
                 <div>
                     <span class="news-category">${escapeHtml(item.category)}</span>
-                    <p class="news-title">${escapeHtml(item.title)}</p>
-                    <p class="news-excerpt">${escapeHtml(item.excerpt)}</p>
+                    <div class="news-body">
+                        <div>
+                            <p class="news-title">${escapeHtml(item.title)}</p>
+                            <p class="news-excerpt">${escapeHtml(item.excerpt)}</p>
+                        </div>
+                        ${item.image ? `<button type="button" class="news-image" aria-label="View larger picture"><img src="${escapeHtml(item.image)}" alt="" loading="lazy"></button>` : ''}
+                    </div>
                 </div>
             </div>`;
     }).join('');
 
+    container.onclick = e => {
+        const img = e.target.closest('.news-image')?.querySelector('img');
+        if (img) showNewsImage(img.src);
+    };
+
     return items;
+}
+
+/* Shows a news picture enlarged; click anywhere or press Esc to close. */
+function showNewsImage(src) {
+    let dialog = document.getElementById('newsLightbox');
+    if (!dialog) {
+        dialog = document.createElement('dialog');
+        dialog.id = 'newsLightbox';
+        dialog.className = 'news-lightbox';
+        dialog.innerHTML = '<img alt="">';
+        dialog.addEventListener('click', () => dialog.close());
+        document.body.appendChild(dialog);
+    }
+    dialog.querySelector('img').src = src;
+    dialog.showModal();
 }

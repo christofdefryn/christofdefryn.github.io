@@ -236,6 +236,18 @@ const PUBLICATIONS = [
         ]
     },
     {
+        id: 'orbital-repo-oos-mdls',
+        type: 'GitHub Repository',
+        title: 'Multi-objective mission planning for depot-supported on-orbit servicing',
+        abstract: 'Python research code and results accompanying the paper of the same name: the mission model, a multi-directional local search (MDLS), an NSGA-II comparator, the paired-trial analysis, and a lexicographic depot-location MILP.',
+        year: 2026,
+        tags: ['orbital'],
+        featured: false,
+        links: [
+            { label: '🔗 View on GitHub', url: 'https://github.com/nsushant/ORBITAL/tree/paper/oos-mdls' }
+        ]
+    },
+    {
         id: 'orbital-2026-ifors',
         type: 'Conference Presentation',
         title: 'Scheduling In-orbit services for mega-constellations',
