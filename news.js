@@ -2,8 +2,8 @@
  * Shared news renderer. Reads the NEWS_ITEMS array (defined in news-data.js,
  * which must be loaded before this script), sorts newest-first, and renders
  * a slice into a container. Depends on escapeHtml() from utils.js.
- * Homepage calls loadNews('newsList', { limit: 5 }) for the latest posts.
- * The archive page calls loadNews('newsArchiveList', { offset: 5 }) for the rest.
+ * Homepage calls loadNews('newsList', { limit: 3 }) for the latest posts.
+ * news.html calls loadNews('newsPageList') for every post.
  */
 function loadNews(containerId, { offset = 0, limit = Infinity, emptyMessage = 'No news items yet.' } = {}) {
     const container = document.getElementById(containerId);

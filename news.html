@@ -3,29 +3,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-{% include head.html title="News Archive | Prof. dr. Christof Defryn" prefix="" %}
+{% include head.html title="News | Prof. dr. Christof Defryn" prefix="" %}
 </head>
 <body>
 
-{% include nav.html prefix="" %}
+{% include nav.html prefix="" active="news" %}
 
 <div class="breadcrumb">
     <a href="index.html">Home</a>
     <span class="breadcrumb-sep">/</span>
-    <a href="index.html#news">News</a>
-    <span class="breadcrumb-sep">/</span>
-    <span class="breadcrumb-current">Archive</span>
+    <span class="breadcrumb-current">News</span>
 </div>
 
-<!-- NEWS ARCHIVE -->
-<section id="news-archive">
+<!-- NEWS -->
+<section id="news-page">
     <div class="container">
         <div class="section-header">
-            <p class="section-label">News Archive</p>
-            <h2 class="section-title">All Updates</h2>
-            <div class="section-divider"></div>
+            <h2 class="section-title">News</h2>
         </div>
-        <div class="news-list" id="newsArchiveList"></div>
+        <div class="news-list" id="newsPageList"></div>
     </div>
 </section>
 
@@ -36,7 +32,7 @@
 <script src="news.js"></script>
 <script src="nav.js"></script>
 <script>
-    loadNews('newsArchiveList', { emptyMessage: 'No news items yet — check back soon.' });
+    loadNews('newsPageList', { emptyMessage: 'No news items yet — check back soon.' });
 </script>
 </body>
 </html>

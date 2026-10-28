@@ -1,0 +1,54 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% assign page_title = page.title | append: " | Prof. dr. Christof Defryn" %}{% include head.html title=page_title prefix="../" %}
+</head>
+<body>
+
+{% include nav.html prefix="../" active="research" %}
+
+<div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="../research.html">Research</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">{{ page.title }}</span>
+</div>
+
+<header class="project-hero domain-hero">
+    <div class="project-hero-inner">
+        <div>
+            <h1 class="project-hero-title">{{ page.title }}</h1>
+            <p class="project-hero-tagline">{{ page.tagline }}</p>
+        </div>
+{% if page.image %}        <img src="../{{ page.image }}" alt="" class="domain-hero-image">
+{% endif %}    </div>
+</header>
+
+<section class="domain-page">
+    <div class="container">
+        <div class="domain-intro">
+{{ content }}
+        </div>
+        <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+    </div>
+</section>
+
+{% include footer.html prefix="../" %}
+
+<script src="../utils.js"></script>
+<script src="../publications-data.js"></script>
+<script src="../publications.js"></script>
+<script src="../projects-data.js"></script>
+<script src="../projects.js"></script>
+<script src="../nav.js"></script>
+<script>
+    renderProjects('projectGrid', { domain: '{{ page.domain }}', prefix: '../' });
+</script>
+</body>
+</html>

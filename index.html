@@ -7,7 +7,7 @@
 </head>
 <body>
 
-{% include nav.html prefix="" news_self=true %}
+{% include nav.html prefix="" %}
 
 <!-- HERO -->
 <header class="hero" id="home">
@@ -15,17 +15,17 @@
         <div>
             <h1 class="hero-name"><strong>Prof. dr. Christof Defryn</strong></h1>
             <p class="hero-title">Associate Professor <br><span class="hero-affiliation">UAntwerpen Business School - Faculty of Business and Economics &nbsp;·&nbsp; Antwerp, Belgium</span></p>
-            <p class="hero-dept"></p>
+            <hr class="hero-rule">
             <p class="hero-bio">
                 I research optimisation models and algorithms to tackle tomorrow's challenges in the field of logistics and supply chain management. <br><br>
-                Building upon my expertise in Operations Research &amp; Supply Chain Management, I study multi-stakeholder interaction in supply chain collaboration, speed optimisation and vessel synchronisation on inland waterways, data-driven optimisation of dynamic warehouses, circular supply chain models, and logistics optimisation in space.
+                Building upon my expertise in Operations Research &amp; Supply Chain Management, I study multi-stakeholder interaction in supply chain collaboration, speed optimisation and vessel synchronisation on inland waterways, data-driven optimisation of dynamic warehouses, circular supply chain models, and optimisation in space.
             </p>
             <div class="hero-links">
                 <a href="about.html" class="btn btn-primary">About me</a>
                 <a href="research.html" class="btn btn-primary">My research</a>
                 <a href="teaching.html" class="btn btn-primary">My teaching</a>
             </div>
-            <div class="hero-links" style="margin-top: 0.75rem;">
+            <div class="hero-links">
                 <a href="https://www.linkedin.com/in/christofdefryn/" class="btn btn-outline" target="_blank" rel="noopener"><span class="icon">🔗</span>LinkedIn</a>
                 <a href="https://github.com/christofdefryn" class="btn btn-outline" target="_blank" rel="noopener"><span class="icon">🔗</span>GitHub</a>
             </div>
@@ -38,33 +38,23 @@
 <section id="news">
     <div class="container">
         <div class="section-header">
-            <p class="section-label">News &amp; Blog</p>
             <h2 class="section-title">Recent Updates</h2>
-            <div class="section-divider"></div>
         </div>
         <div class="news-list" id="newsList"></div>
-        <div style="text-align:center; margin-top:2.5rem;" id="newsArchiveLink">
-            <a href="news.html" class="btn btn-outline">View full news archive →</a>
+        <div style="text-align:center; margin-top:2.5rem;">
+            <a href="news.html" class="btn btn-outline">All news →</a>
         </div>
     </div>
 </section>
 
-{% include footer.html prefix="" news_self=true %}
+{% include footer.html prefix="" %}
 
 <script src="utils.js"></script>
 <script src="news-data.js"></script>
 <script src="news.js"></script>
 <script src="nav.js"></script>
 <script>
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-        a.addEventListener('click', function(e) {
-            const t = document.querySelector(this.getAttribute('href'));
-            if (t) { e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' }); }
-        });
-    });
-
-    const newsItems = loadNews('newsList', { limit: 5 });
-    if (newsItems.length <= 5) document.getElementById('newsArchiveLink').style.display = 'none';
+    loadNews('newsList', { limit: 3 });
 </script>
 </body>
 </html>
