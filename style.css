@@ -134,6 +134,7 @@ footer { background: var(--sage-darker); color: rgba(255,255,255,0.65); padding:
 /* ── Research domains (research page + domain pages) ── */
 /* Domain cards reuse the project-card styles, with a banner instead of the bar.
    Without an <img> inside, the banner shows a plain sage gradient. */
+#domains + .project-grid .project-card-title { font-family: 'Cormorant SC', var(--font-display); font-size: 1.35rem; }
 .project-card-banner { height: 140px; background: linear-gradient(135deg, var(--sage-deep), var(--accent)); overflow: hidden; }
 .project-card-banner img { display: block; width: 100%; height: 100%; object-fit: cover; }
 /* Domain page banner: title on the left, the domain's visual on the right */
@@ -187,6 +188,8 @@ footer { background: var(--sage-darker); color: rgba(255,255,255,0.65); padding:
 .hero-name { font-family: 'Cormorant SC', var(--font-display); font-size: clamp(1.9rem, 3.8vw, 3rem); font-weight: 300; line-height: 1.1; color: var(--cream); margin-bottom: 0.25rem; }
 .hero-name strong { font-weight: 500; }
 .hero-title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 300; line-height: 1.25; color: rgba(251,248,241,0.85); font-style: italic; margin-bottom: 0.25rem; }
+.hero-title a { color: inherit; text-decoration: underline; text-decoration-color: rgba(251,248,241,0.35); text-underline-offset: 3px; }
+.hero-title a:hover { color: var(--cream); text-decoration-color: var(--cream); }
 .hero-rule { max-width: 720px; border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 1rem 0 1.25rem; }
 .hero-bio { font-size: 1.05rem; color: rgba(251,248,241,0.82); max-width: 720px; margin-bottom: 1.5rem; line-height: 1.7; }
 /* Button rows sit side by side and wrap when space runs out */

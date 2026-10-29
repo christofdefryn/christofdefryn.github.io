@@ -49,9 +49,10 @@
                     <span class="project-info-value">{{ page.status | capitalize }}, {{ page.years }}</span>
                 </li>
                 <li class="project-info-item">
-                    <span class="project-info-label">Collaborators</span>
+                    <span class="project-info-label">Project team</span>
                     <span class="project-info-value">
-{% for c in page.collaborators %}                        {% if c.url %}<a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% unless forloop.last %}<br>{% endunless %}
+{% unless page.custom_team %}                        Christof Defryn ({{ page.pi_role | default: "PI" }}){% if page.collaborators %}<br>{% endif %}
+{% endunless %}{% for c in page.collaborators %}                        {% if c.url %}<a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% if c.role %} ({{ c.role }}){% endif %}{% unless forloop.last %}<br>{% endunless %}
 {% endfor %}                    </span>
                 </li>
 {% if page.funding %}                <li class="project-info-item">
