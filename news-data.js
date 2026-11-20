@@ -7,6 +7,13 @@
  */
 const NEWS_ITEMS = [
     {
+        "date": "2026-11-20",
+        "category": "Team",
+        "title": "Welcoming Júlia Cária to the research team",
+        "image": "pics/2026-11_julia-caria.jpg",
+        "excerpt": "Júlia Cária joins the team as a PhD researcher in warehousing. With a degree in Computer Science and several years of experience as an Operations Research analyst, she will develop mathematical models and optimisation algorithms that integrate storage location assignment, picking and packing. Through forecast-driven decision making, these decisions are pushed earlier, so that warehouses can stop reacting to problems and start anticipating them."
+    },
+    {
         "date": "2026-09-29",
         "category": "Talk",
         "title": "Session at the Supply Chain Professionals Club",
